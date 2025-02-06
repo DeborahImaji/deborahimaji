@@ -7,6 +7,11 @@ body {
     background-color: #27304B;
 }
 
+.navbar {
+    display: flex;
+    padding: 5px 10px;
+}
+
 .logo {
     color: #000000;
     font-family: "Ingrid Darling", serif;
@@ -25,6 +30,7 @@ body {
     border-radius: 20px;
     color: white;
     font-family: "Inter", serif;
+    font-size: 14px;
     margin: 0px 1px;
     padding: 10px 20px;
     text-decoration: none;
