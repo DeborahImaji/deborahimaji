@@ -1,5 +1,6 @@
 body {
     background-color: #ffffff;
+    font-family: "Inter", serif;
 }
 
 .dark {
@@ -8,10 +9,28 @@ body {
 
 .logo {
     color: #000000;
+    font-family: "Ingrid Darling", serif;
+    font-size: 28px;
+    font-weight: 400;
     text-decoration: none;
 }
 
 .dark .logo {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.menu-link {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-family: "Inter", serif;
+    margin: 0px 1px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.dark .menu-link {
+    background-color: white;
+    color: #27304B;
 }
