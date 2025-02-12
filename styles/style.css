@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
     font-family: "Inter", serif;
+    transition: 0.3s;
 }
 
 .dark {
@@ -39,4 +44,33 @@ body {
 .dark .menu-link {
     background-color: white;
     color: #27304B;
+}
+
+.switch {
+    display: none;
+}
+
+.toggle-wrapper {
+    background: #fff;
+    background: linear-gradient(to bottom, rgba(185, 147, 212, 1) 0%, rgba(230, 224, 237, 1) 65%);
+    border-radius: 120px;
+    cursor: pointer;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    width: 78.75px;
+}
+
+.toggle-wrapper:before {
+    background: linear-gradient(180deg, rgba(231, 95, 122, 1) 0%, rgba(255, 177, 104, 1) 83%);
+    border-radius: 120px;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+    width: 100%;
 }
