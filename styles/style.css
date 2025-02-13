@@ -50,6 +50,8 @@ body {
     display: none;
 }
 
+
+
 .toggle-wrapper {
     background: #fff;
     background: linear-gradient(to bottom, rgba(185, 147, 212, 1) 0%, rgba(230, 224, 237, 1) 65%);
@@ -73,4 +75,65 @@ body {
     top: 0;
     transition: 1s;
     width: 100%;
+}
+
+#switch:checked+*:before {
+    opacity: 1;
+}
+
+.hills {
+    bottom: -150px;
+    display: flex;
+    left: -40px;
+    position: relative;
+    width: 720px;
+}
+
+.hill-left {
+    background: #5c6090;
+    border-radius: 100%;
+    height: 120px;
+    left: -10px;
+    position: relative;
+    top: -6px;
+    transform: rotate(8deg);
+    width: 380px;
+    z-index: 2;
+}
+
+.hill-right {
+    background: #4b4f85;
+    border-radius: 100%;
+    height: 150px;
+    left: -80px;
+    position: relative;
+    width: 340px;
+    z-index: 1;
+}
+
+.tree-left {
+    bottom: -40px;
+    left: 100px;
+    position: absolute;
+    z-index: 5;
+}
+
+.tree-left .trunk {
+    background: #3b3853;
+    border-radius: 100% 100% 0 0;
+    height: 200px;
+    width: 16px;
+    z-index: 3;
+}
+
+.branch {
+    background: #3b3853;
+    position: relative;
+}
+
+.branch:nth-child(1) {
+    height: 70px;
+    left: -10px;
+    top: 46px;
+    width: 10px;
 }
