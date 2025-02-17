@@ -1,5 +1,18 @@
 body {
+    background-color: #fff;
+    /* Light theme background */
+    color: #000;
+    /* Light theme text color */
     font-family: "Inter", serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transitions */
+}
+
+body.dark-theme {
+    background-color: #121212;
+    /* Dark theme background */
+    color: #eee;
+    /* Dark theme text color */
 }
 
 .navbar {
@@ -25,3 +38,38 @@ body {
     padding: 10px 20px;
     text-decoration: none;
 }
+
+/* Beginning of the temporary theme button code */
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    /* Adjust as needed */
+    /* Other button styles */
+}
+
+#theme-toggle i {
+    /* Style the icons */
+    transition: opacity 0.3s ease;
+    /* Smooth icon transition */
+}
+
+#theme-toggle .fa-sun {
+    opacity: 0;
+    /* Initially hidden */
+}
+
+#theme-toggle.dark-theme .fa-moon {
+    opacity: 0;
+    /* Hidden in dark theme */
+}
+
+#theme-toggle.dark-theme .fa-sun {
+    opacity: 1;
+    /* Shown in dark theme */
+}
+
+/* End of the temporary theme button code */
