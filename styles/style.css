@@ -1,15 +1,18 @@
 body {
     background-color: #FFFFFF;
     font-family: "Inter", serif;
+    transition: all 950ms ease-in-out;
 }
 
 .dark {
     background-color: #01131F;
+    transition: all 950ms ease-in-out;
 }
 
 .navbar {
     display: flex;
-    padding: 5px 10px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo {
@@ -20,20 +23,29 @@ body {
     text-decoration: none;
 }
 
+.dark .logo {
+    color: #FFFFFF;
+}
+
 .menu-link {
     background-color: black;
     border-radius: 20px;
     color: white;
     font-family: "Inter", serif;
     font-size: 14px;
-    margin: 0px 1px;
     padding: 10px 20px;
     text-decoration: none;
 }
 
-.toggle-body {
+.slider {
     background: linear-gradient(180deg, #FFF5D9 0%, #FFCE4B 100%);
     border-radius: 30px;
     height: 40px;
+    transition: all 950ms ease-in-out;
     width: 90px;
+}
+
+.dark .slider {
+    background: linear-gradient(180deg, #092A40 0%, #382F4D);
+    transition: all 950ms ease-in-out;
 }
