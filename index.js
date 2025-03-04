@@ -9,5 +9,5 @@ function changeTheme() {
     }
 }
 
-let themeButton = document.querySelector("#slider");
+let themeButton = document.querySelector("#theme-button");
 themeButton.addEventListener('click', changeTheme);
