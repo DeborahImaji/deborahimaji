@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Buckluck';
+    src: url('../assets/fonts/Buckluck.woff2') format('woff2'),
+        url('../assets/fonts/Buckluck.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #FFFFFF;
 }
@@ -6,17 +14,31 @@ body {
     background-color: #000000;
 }
 
+.logo {
+    font-family: 'Buckluck', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
 .theme-button {
     background-image: url("../assets/theme button/Light Theme Button Picture.png");
     border: 0px solid #FFFFFF;
     border-radius: 30px;
-    height: 50px;
-    width: 110px;
+    height: 45px;
+    width: 100px;
+}
+
+.dark .theme-button {
+    background-image: url("../assets/theme button/Dark Theme Button Picture.png");
 }
 
 .theme-button-switch {
-    background-color: bisque;
+    background-color: #FFFFFF;
     border-radius: 50px;
     height: 35px;
     width: 35px;
+}
+
+.dark .theme-button-switch {
+    justify-content: right;
 }
