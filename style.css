@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Fairy Strange';
+    src: url('assets/fonts/Fairy Strange.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .logo {
     color: #32325D;
+    font-family: 'Fairy Strange';
+    font-size: 16px;
     text-decoration: none;
 }
