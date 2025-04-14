@@ -7,15 +7,48 @@
 
 body {
     background-color: #FFFFFF;
+    transition: all 900ms ease-in-out;
 }
 
-body .dark {
+.dark {
     background-color: #020925;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 26px;
+    margin-right: 26px;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    .navbar-left {
+        display: none;
+    }
 }
 
 .logo {
     color: #32325D;
     font-family: 'Fairy Strange';
     font-size: 14px;
+    text-decoration: none;
+    transition: all 900ms ease-in-out;
+}
+
+.dark .logo {
+    color: #E8A1FD;
+}
+
+.navbar-option-current {
+    background: linear-gradient(to bottom, #E8A1FD, #B97BFC);
+    color: #32325D;
+    text-decoration: none;
+}
+
+.navbar-option {
+    background-color: #FFFFFF;
+    border: 2px solid #32325D;
+    color: #32325D;
     text-decoration: none;
 }
