@@ -5,8 +5,65 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-RegularItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/assets/fonts/Lemon Milk/LEMONMILK-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
 body {
     background-color: #FFFFFF;
+    font-family: 'LemonMilk', sans-serif;
     transition: all 900ms ease-in-out;
 }
 
@@ -43,6 +100,11 @@ body {
 .navbar-option-current {
     background: linear-gradient(to bottom, #E8A1FD, #B97BFC);
     color: #32325D;
+    font-family: 'LemonMilk', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -50,5 +112,10 @@ body {
     background-color: #FFFFFF;
     border: 2px solid #32325D;
     color: #32325D;
+    font-family: 'LemonMilk', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
     text-decoration: none;
 }
