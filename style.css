@@ -6,59 +6,45 @@
 }
 
 @font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Regular.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'Clash Display';
+    src: url('assets/fonts/Clash Display/ClashDisplay-Extralight.woff2') format('woff2');
+    font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-RegularItalic.woff2') format('woff2');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Light.woff2') format('woff2');
-    font-weight: 300;
+    font-family: 'Clash Display';
+    src: url('assets/fonts/Clash Display/ClashDisplay-Light.woff2') format('woff2');
+    font-weight: light;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Medium.woff2') format('woff2');
-    font-weight: 500;
+    font-family: 'Clash Display';
+    src: url('assets/fonts/Clash Display/ClashDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-Bold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'Clash Display';
+    src: url('assets/fonts/Clash Display/ClashDisplay-Medium.woff2') format('woff2');
+    font-weight: medium;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'LemonMilk';
-    src: url('/assets/fonts/Lemon Milk/LEMONMILK-BoldItalic.woff2') format('woff2');
-    font-weight: 700;
-    font-style: italic;
+    font-family: 'Clash Display';
+    src: url('assets/fonts/Clash Display/ClashDisplay-Semibold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('assets/fonts/Clash Display/ClashDisplay-Bold.woff2') format('woff2');
+    font-weight: bolder;
+    font-style: normal;
 }
 
 body {
@@ -76,6 +62,7 @@ body {
     justify-content: space-between;
     margin-left: 26px;
     margin-right: 26px;
+    margin-top: 20px;
     padding: 8px;
 }
 
@@ -98,24 +85,31 @@ body {
 }
 
 .navbar-option-current {
-    background: linear-gradient(to bottom, #E8A1FD, #B97BFC);
-    color: #32325D;
-    font-family: 'LemonMilk', sans-serif;
+    background: #32325D;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-family: 'Clash Display';
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 10px;
+    font-weight: bolder;
+    margin: 0 5px;
+    padding: 8px 36px;
     text-decoration: none;
+    transition: all 225ms ease-in-out;
+}
+
+.navbar-option-current:hover {
+    background: #F3D4FF;
+    color: #32325D;
+}
+
+.dark .navbar-option-current {
+    background: linear-gradient(to bottom, #E8A1FD, #B97BFC);
 }
 
 .navbar-option {
-    background-color: #FFFFFF;
-    border: 2px solid #32325D;
-    color: #32325D;
-    font-family: 'LemonMilk', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 10px;
+    background: #32325D;
+    border-radius: 50px;
+    color: #FFFFFF;
+    padding: 8px 26px;
     text-decoration: none;
 }
