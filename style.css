@@ -89,10 +89,10 @@ body {
     border-radius: 50px;
     color: #FFFFFF;
     font-family: 'Clash Display';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
-    margin: 0 5px;
-    padding: 8px 36px;
+    margin: 0 1px;
+    padding: 8px 24px;
     text-decoration: none;
     transition: all 225ms ease-in-out;
 }
@@ -107,9 +107,15 @@ body {
 }
 
 .navbar-option {
-    background: #32325D;
+    background: #FFFFFF;
+    border: 1.5px solid #32325D;
     border-radius: 50px;
-    color: #FFFFFF;
-    padding: 8px 26px;
+    color: #32325D;
+    font-family: 'Clash Display';
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 0 1px;
+    padding: 8px 24px;
     text-decoration: none;
+    transition: all 225ms ease-in-out;
 }
