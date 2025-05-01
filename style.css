@@ -99,6 +99,7 @@ body {
 
 .navbar-option-current:hover {
     background: #F3D4FF;
+    border: 1.5px solid #32325D;
     color: #32325D;
 }
 
@@ -118,4 +119,9 @@ body {
     padding: 8px 24px;
     text-decoration: none;
     transition: all 225ms ease-in-out;
+}
+
+.navbar-option:hover {
+    background-color: #32325D;
+    color: #FFFFFF;
 }
