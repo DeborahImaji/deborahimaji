@@ -84,27 +84,35 @@ body {
     color: #E8A1FD;
 }
 
+.navbar-right {
+    display: flex;
+}
+
 .navbar-option-current {
     background: #32325D;
+    border: 1px solid #32325D;
     border-radius: 50px;
     color: #FFFFFF;
     font-family: 'Clash Display';
     font-size: 16px;
     font-weight: bolder;
     margin: 0 1px;
-    padding: 8px 24px;
+    padding: 8px 22px;
     text-decoration: none;
     transition: all 225ms ease-in-out;
 }
 
 .navbar-option-current:hover {
     background: #F3D4FF;
-    border: 1.5px solid #32325D;
+    border: 1.5px solid #F3D4FF;
     color: #32325D;
 }
 
 .dark .navbar-option-current {
     background: linear-gradient(to bottom, #E8A1FD, #B97BFC);
+    border: none;
+    box-shadow: -1px 2px 21px 0px rgba(232, 161, 253, 0.75);
+    transition: all 225ms ease-in-out;
 }
 
 .navbar-option {
@@ -116,7 +124,7 @@ body {
     font-size: 16px;
     font-weight: bolder;
     margin: 0 1px;
-    padding: 8px 24px;
+    padding: 8px 22px;
     text-decoration: none;
     transition: all 225ms ease-in-out;
 }
