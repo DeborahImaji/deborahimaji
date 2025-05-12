@@ -58,12 +58,10 @@ body {
 }
 
 .navbar {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-left: 26px;
-    margin-right: 26px;
-    margin-top: 36px;
-    padding: 8px;
+    padding: 25px 40px;
 }
 
 @media (max-width: 768px) {
@@ -85,6 +83,7 @@ body {
 }
 
 .navbar-right {
+    align-items: center;
     display: flex;
 }
 
@@ -139,4 +138,16 @@ body {
 .navbar-option:hover {
     background-color: #32325D;
     color: #FFFFFF;
+}
+
+.theme-button {
+    background-color: #32325D;
+    border: none;
+    border-radius: 50px;
+    margin: 0 1.5px;
+    padding: 8px 10px;
+}
+
+.theme-button-icon {
+    max-width: 20px;
 }
