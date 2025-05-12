@@ -62,7 +62,7 @@ body {
     justify-content: space-between;
     margin-left: 26px;
     margin-right: 26px;
-    margin-top: 20px;
+    margin-top: 36px;
     padding: 8px;
 }
 
@@ -96,7 +96,7 @@ body {
     font-family: 'Clash Display';
     font-size: 16px;
     font-weight: bolder;
-    margin: 0 1px;
+    margin: 0 2px;
     padding: 8px 22px;
     text-decoration: none;
     transition: all 225ms ease-in-out;
@@ -123,7 +123,7 @@ body {
     font-family: 'Clash Display';
     font-size: 16px;
     font-weight: bolder;
-    margin: 0 1px;
+    margin: 0 2px;
     padding: 8px 22px;
     text-decoration: none;
     transition: all 225ms ease-in-out;
@@ -131,6 +131,9 @@ body {
 
 .dark .navbar-option {
     background-color: #010925;
+    border: 1.5px solid #E8A1FD;
+    box-shadow: -1px 2px 21px 0px rgba(232, 161, 253, 0.75);
+    color: #FFFFFF;
 }
 
 .navbar-option:hover {
