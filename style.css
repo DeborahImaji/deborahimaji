@@ -144,8 +144,18 @@ body {
     background-color: #32325D;
     border: none;
     border-radius: 50px;
-    margin: 0 1.5px;
-    padding: 8px 10px;
+    margin-left: 5px;
+    padding: 6px 10px;
+    transition: all 225ms ease-in-out;
+}
+
+.dark .theme-button {
+    background-color: #010925;
+    border: 1.5px solid #E8A1FD;
+}
+
+.theme-button:hover {
+    background-color: #F3D4FF;
 }
 
 .theme-button-icon {
