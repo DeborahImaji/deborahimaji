@@ -158,6 +158,10 @@ body {
     background-color: #F3D4FF;
 }
 
+.dark .theme-button:hover {
+    background-color: ;
+}
+
 .theme-button-icon {
     max-width: 20px;
 }
