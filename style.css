@@ -65,6 +65,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar-left {
         display: none;
     }
@@ -85,6 +93,12 @@ body {
 .navbar-right {
     align-items: center;
     display: flex;
+}
+
+@media (max-width: 768px) {
+    .navbar-items-container {
+        display: none;
+    }
 }
 
 .navbar-option-current {
@@ -159,7 +173,7 @@ body {
 }
 
 .dark .theme-button:hover {
-    background-color: ;
+    background-color: #32325D;
 }
 
 .theme-button-icon {
