@@ -179,3 +179,14 @@ body {
 .theme-button-icon {
     max-width: 20px;
 }
+
+.main-element {
+    margin-inline-start: 0;
+    margin: 0 60px;
+}
+
+.main-heading-1 {
+    font-family: 'Clash Display';
+    font-size: 100px;
+    font-weight: bolder;
+}
