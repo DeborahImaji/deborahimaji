@@ -190,18 +190,45 @@ body {
     display: flex;
     font-family: 'Clash Display';
     font-size: 120px;
-    font-weight: bolder;
     flex-direction: column;
-    gap: 0.01px; /* spacing between lines */
+    gap: 0.01px;
+    /* spacing between lines */
     margin: 0 auto;
     margin-top: 20px;
     width: 90%;
 }
-  
+
+@media (max-width: 1366px) {
+    .main-heading-container {
+        font-size: 85px;
+    }
+}
+
+/* For tablets */
+@media (max-width: 1024px) {
+    .main-heading-container {
+        font-size: 70px;
+    }
+}
+
+/* For large phones */
+@media (max-width: 768px) {
+    .main-heading-container {
+        font-size: 50px;
+    }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+    .main-heading-container {
+        font-size: 22px;
+    }
+}
+
 .main-heading-left {
     align-self: flex-start;
 }
-  
+
 .main-heading-right {
     align-self: flex-end;
 }
