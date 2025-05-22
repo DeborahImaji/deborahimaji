@@ -182,55 +182,25 @@ body {
     max-width: 20px;
 }
 
-.main-element {
-    margin-inline-start: 0;
-    margin: 0 60px;
-}
-
-.main-heading-container {
-    color: #477FFF;
+.homescreen-heading1-container {
     display: flex;
-    font-family: 'Clash Display';
-    font-size: 120px;
     flex-direction: column;
-    gap: 0.01px;
-    /* spacing between lines */
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 90%;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    outline: none;
+    transform: none;
 }
 
-@media (max-width: 1366px) {
-    .main-heading-container {
-        font-size: 85px;
-    }
+.homescreen-heading2-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    transform: none;
+    text-align: right;
+    outline: none;
 }
 
-/* For tablets */
-@media (max-width: 1024px) {
-    .main-heading-container {
-        font-size: 70px;
-    }
-}
-
-/* For large phones */
-@media (max-width: 768px) {
-    .main-heading-container {
-        font-size: 50px;
-    }
-}
-
-/* For small phones */
-@media (max-width: 480px) {
-    .main-heading-container {
-        font-size: 22px;
-    }
-}
-
-.main-heading-left {
-    align-self: flex-start;
-}
-
-.main-heading-right {
-    align-self: flex-end;
+.homescreen-heading2 {
+    text-align: right;
 }
