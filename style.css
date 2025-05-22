@@ -156,7 +156,7 @@ body {
 
 .theme-button {
     background-color: #32325D;
-    border: none;
+    border: 1.5px solid #32325D;
     border-radius: 50px;
     margin-left: 5px;
     padding: 6px 10px;
@@ -169,11 +169,13 @@ body {
 }
 
 .theme-button:hover {
-    background-color: #F3D4FF;
+    background-color: #FFFFFF;
+    border: 1.5px solid #32325D;
 }
 
 .dark .theme-button:hover {
     background-color: #32325D;
+    border: 1.5px solid #E8A1FD;
 }
 
 .theme-button-icon {
