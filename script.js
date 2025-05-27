@@ -4,10 +4,10 @@ function changeTheme() {
 
     if (body.classList.contains("dark")) {
         body.classList.remove("dark");
-        themeButton.innerHTML = `<img src="assets/icons/sun.png" alt="Sun Icon" class="theme-button-icon" id="theme-button-icon">`;
+        themeButton.innerHTML = `<p>It is bright</p>`;
     } else {
         body.classList.add("dark");
-        themeButton.innerHTML = `<img src="assets/icons/moon.png" alt="Moon Icon" class="theme-button-icon" id="theme-button-icon">`;
+        themeButton.innerHTML = `<p>It is dark</p>`;
     }
 }
 
