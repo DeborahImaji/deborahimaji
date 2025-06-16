@@ -9,7 +9,7 @@
 
 body {
     background-color: #FFFFFF;
-    transition: all 600ms ease-in-out;
+    transition: all 800ms ease-in-out;
 }
 
 .dark {
@@ -21,20 +21,27 @@ body {
 }
 
 .navbar-container {
-    margin-left: 46.333px;
-    margin-right: 46.333px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-brand {
     color: #000000;
     font-family: 'Fairy Strange';
     font-size: 14px;
-    margin: 16px;
     text-decoration: none;
-    transition: all 600ms ease-in-out;
-    padding: 5px;
+    transition: all 800ms ease-in-out;
 }
 
 .dark .navbar-brand {
     color: #E8A1FD;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-menu-option {
+    color: #000000;
+    text-decoration: none;
 }
