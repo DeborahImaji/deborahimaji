@@ -120,3 +120,8 @@ body {
 .dark .navbar-menu-option:hover {
     background-color: #33325C;
 }
+
+.social-icon {
+    height: 22px;
+    width: 22px;
+}
