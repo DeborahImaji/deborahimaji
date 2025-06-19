@@ -26,7 +26,7 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #F3F1EF;
     font-family: 'Satoshi';
     transition: all 800ms ease-in-out;
 }
@@ -42,6 +42,7 @@ body {
 .navbar-container {
     display: flex;
     justify-content: space-between;
+    margin: 5px 46.333px;
 }
 
 .navbar-brand {
@@ -60,16 +61,62 @@ body {
     display: flex;
 }
 
+.navbar-menu-option-current {
+    background-color: #000000;
+    border: 0.1px solid #000000;
+    border-radius: 50px;
+    color: #F3F1EF;
+    font-family: 'Satoshi';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    margin: 0 2px;
+    padding: 8px 28px;
+    text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+
+.navbar-menu-option-current:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+.dark .navbar-menu-option-current {
+    background: linear-gradient(to bottom, #E8A1FD, #B97BFC);
+    border: 0.1px solid #e8a1fd;
+    box-shadow: 2px 2px 14px -1px rgba(232, 161, 253, 0.75);
+}
+
+.dark .navbar-menu-option-current:hover {
+    color: #020925;
+}
+
 .navbar-menu-option {
     background-color: transparent;
-    border: 1.33px solid #000000;
+    border: 0.1px solid #000000;
     border-radius: 50px;
     color: #000000;
     font-family: 'Satoshi';
     font-size: 13px;
     font-style: normal;
-    font-weight: 700;
-    margin: 0 1px;
+    font-weight: 800;
+    margin: 0 2px;
     padding: 8px 28px;
     text-decoration: none;
+}
+
+.navbar-menu-option:hover {
+    background-color: #000000;
+    color: #F3F1EF;
+    transition: all 400ms ease-in-out;
+}
+
+.dark .navbar-menu-option {
+    border: 0.5px solid #E8A1FD;
+    box-shadow: 2px 2px 14px -1px rgba(232, 161, 253, 0.75);
+    color: #FFFFFF;
+}
+
+.dark .navbar-menu-option:hover {
+    background-color: #33325C;
 }
