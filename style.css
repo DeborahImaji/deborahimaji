@@ -121,7 +121,31 @@ body {
     background-color: #33325C;
 }
 
+.navbar-socials {
+    margin: 0 6px;
+}
+
+.navbar-socials a {
+    padding: 6px;
+    text-decoration: none;
+}
+
 .social-icon {
     height: 22px;
     width: 22px;
+}
+
+.theme-button {
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+}
+
+.dark .theme-button {
+    background-color: #FFFFFF;
+}
+
+.theme-button img {
+    height: 18px;
+    width: 18px;
 }
