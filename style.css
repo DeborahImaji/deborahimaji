@@ -8,26 +8,17 @@
 }
 
 @font-face {
-    font-family: 'Satoshi';
-    src: url('assets/fonts/woff2/Satoshi-Variable.woff2') format('woff2'),
-        url('assets/fonts/woff/Satoshi-Variable.woff') format('woff');
-    font-weight: 300 900;
+    font-family: 'Clash Display';
+    src: url('assets/fonts/woff2/ClashDisplay-Variable.woff2') format('woff2'),
+        url('assets/fonts/woff/ClashDisplay-Variable.woff') format('woff');
+    font-weight: 200 700;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('assets/fonts/woff2/Satoshi-VariableItalic.woff2') format('woff2'),
-        url('assets/fonts/woff/Satoshi-VariableItalic.woff') format('woff');
-    font-weight: 300 900;
-    font-style: italic;
     font-display: swap;
 }
 
 body {
     background-color: #F3F1EF;
-    font-family: 'Satoshi';
+    font-family: 'Clash Display';
     transition: all 800ms ease-in-out;
 }
 
@@ -66,10 +57,10 @@ body {
     border: 0.1px solid #000000;
     border-radius: 50px;
     color: #F3F1EF;
-    font-family: 'Satoshi';
-    font-size: 13px;
+    font-family: 'Clash Display';
+    font-size: 14px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0 2px;
     padding: 8px 28px;
     text-decoration: none;
@@ -96,10 +87,10 @@ body {
     border: 0.1px solid #000000;
     border-radius: 50px;
     color: #000000;
-    font-family: 'Satoshi';
-    font-size: 13px;
+    font-family: 'Clash Display';
+    font-size: 14px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0 2px;
     padding: 8px 28px;
     text-decoration: none;
@@ -169,10 +160,24 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Satoshi';
+    font-family: 'Clash Display';
     font-size: 90px;
-    font-weight: 900;
-    line-height: 105px;
+    font-weight: 700;
     margin: 50px 0;
     text-align: center;
+    transition: all 800ms ease-in-out;
+}
+
+.dark .homescreen-heading {
+    background: linear-gradient(#FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 800ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .homescreen-heading {
+        font-size: 32px;
+    }
 }
