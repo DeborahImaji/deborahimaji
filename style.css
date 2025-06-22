@@ -126,7 +126,7 @@ body {
 }
 
 .navbar-socials a {
-    padding: 6px;
+    margin: 6px;
     text-decoration: none;
 }
 
@@ -135,17 +135,44 @@ body {
     width: 22px;
 }
 
-.theme-button {
-    background-color: #000000;
-    border: none;
-    border-radius: 10px;
+.theme-icon {
+    height: 22px;
+    width: 22px;
 }
 
-.dark .theme-button {
-    background-color: #FFFFFF;
+@media (max-width: 768px) {
+    .navbar-container {
+        margin: 5px 0px;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-right {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+    }
 }
 
-.theme-button img {
-    height: 18px;
-    width: 18px;
+.homescreen-heading {
+    background: linear-gradient(#3C6FE6, #2F9BE0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Satoshi';
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 105px;
+    margin: 50px 0;
+    text-align: center;
 }
