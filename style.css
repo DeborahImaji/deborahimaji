@@ -169,11 +169,30 @@ body {
 }
 
 .dark .homescreen-heading {
-    background: linear-gradient(#FFFFFF, #FFFFFF);
+    background: linear-gradient(#FFFFFF, #f4d1ff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 800ms ease-in-out;
+}
+
+.Typewriter__cursor {
+    color: #2C6DB2;
+    /* match your theme */
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {

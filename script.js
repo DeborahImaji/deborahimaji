@@ -1,4 +1,15 @@
 
+window.addEventListener("DOMContentLoaded", function () {
+    new Typewriter("#homescreen-heading", {
+        autoStart: true,
+        delay: 50,
+        loop: false
+    })
+        .typeString("HELLO WORLD,<br />I AM DEBORAH IMAJI.")
+        .start();
+});
+
+
 function changeTheme(event) {
     event.preventDefault();
     let bodyElement = document.querySelector("body");
