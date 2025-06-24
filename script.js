@@ -1,8 +1,8 @@
 
 window.addEventListener("DOMContentLoaded", function () {
-    new Typewriter("#homescreen-heading", {
+    new Typewriter("#gradient-intro", {
         autoStart: true,
-        delay: 50,
+        delay: 120,
         loop: false
     })
         .typeString("HELLO WORLD,<br />I AM DEBORAH IMAJI.")

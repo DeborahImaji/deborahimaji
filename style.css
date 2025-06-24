@@ -155,11 +155,8 @@ body {
     }
 }
 
-.homescreen-heading {
-    background: linear-gradient(#3C6FE6, #2F9BE0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.intro-heading {
+
     font-family: 'Clash Display';
     font-size: 90px;
     font-weight: 700;
@@ -168,19 +165,37 @@ body {
     transition: all 800ms ease-in-out;
 }
 
-.dark .homescreen-heading {
+.gradient-intro {
+    background: linear-gradient(#3C6FE6, #2F9BE0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark .intro-heading {
+
+    transition: all 800ms ease-in-out;
+}
+
+.dark .gradient-intro {
     background: linear-gradient(#FFFFFF, #f4d1ff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 800ms ease-in-out;
 }
 
-.Typewriter__cursor {
-    color: #2C6DB2;
-    /* match your theme */
-    font-weight: bold;
+#custom-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 0.75em;
+    background-color: #2F9BE0;
+    border-radius: 8px;
+    margin-left: 0;
+    transform: translateX(-20px);
     animation: blink 1s infinite;
+    margin-top: 0;
+    transform: translateY(-7px);
+    vertical-align: middle;
 }
 
 @keyframes blink {
@@ -196,7 +211,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .homescreen-heading {
+    .intro-heading {
         font-size: 32px;
     }
 }
