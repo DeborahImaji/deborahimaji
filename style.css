@@ -155,8 +155,15 @@ body {
     }
 }
 
-.intro-heading {
+.intro-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
+.intro-heading {
     font-family: 'Clash Display';
     font-size: 90px;
     font-weight: 700;
@@ -186,14 +193,13 @@ body {
 
 #custom-cursor {
     display: inline-block;
-    width: 9px;
-    height: 0.95em;
+    width: 0.1em;
+    height: 1em;
     background-color: #4FACFE;
     border-radius: 5px;
-    margin-left: 0;
-    transform: translate(-25px, -7.7px);
+    transform: translate(-0.25em, -0.09em);
+    /* slight pull to the left */
     animation: blink 0.8s infinite;
-    margin-top: 0;
     vertical-align: middle;
 }
 
@@ -215,6 +221,6 @@ body {
 
 @media (max-width: 768px) {
     .intro-heading {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
