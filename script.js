@@ -43,5 +43,23 @@ function changeTheme(event) {
     }
 }
 
+// FOR SCROLLING
+const slideUpElements = document.querySelectorAll('.intro-subtitle');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // stop watching after first reveal
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+slideUpElements.forEach(el => observer.observe(el));
+// END OF SCROLLING
+
+
 let themeButton = document.querySelector("#theme-button");
 themeButton.addEventListener('click', changeTheme);

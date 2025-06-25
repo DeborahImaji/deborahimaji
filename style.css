@@ -167,7 +167,7 @@ body {
     font-family: 'Clash Display';
     font-size: 90px;
     font-weight: 700;
-    margin: 50px 0;
+    margin: 50px 0 5px 0;
     text-align: center;
     transition: all 800ms ease-in-out;
 }
@@ -185,7 +185,7 @@ body {
 }
 
 .dark .gradient-intro {
-    background: linear-gradient(#FFFFFF, #f4d1ff);
+    background: linear-gradient(#ecb1fe, #B97BFC);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,4 +223,25 @@ body {
     .intro-heading {
         font-size: 30px;
     }
+}
+
+.intro-subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    /* For scrolling */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+/* For scrolling */
+.intro-subtitle.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dark .intro-subtitle {
+    color: #f7dfffd9;
 }
