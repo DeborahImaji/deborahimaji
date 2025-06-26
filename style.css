@@ -26,6 +26,12 @@ body {
     background-color: #020925;
 }
 
+@media (max-width: 768px) {
+    .body-container {
+        padding: 40px 24px;
+    }
+}
+
 .navbar {
     padding: 8px 16px;
 }
@@ -230,18 +236,30 @@ body {
     font-weight: 500;
     margin: 0 auto;
     text-align: center;
-    /* For scrolling */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-out;
-}
 
-/* For scrolling */
-.intro-subtitle.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .dark .intro-subtitle {
     color: #f7dfffd9;
 }
+
+@media (max-width: 768px) {
+    .intro-subtitle {
+        font-size: 16px;
+        text-wrap: wrap;
+    }
+}
+
+/* Scroll slide up */
+.slide-up-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: all 1s ease-out;
+}
+
+.slide-up-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scroll slide up */

@@ -6,9 +6,36 @@ window.addEventListener("DOMContentLoaded", function () {
         loop: false
     })
         .typeString("HELLO WORLD,<br />I AM DEBORAH IMAJI.")
+        .callFunction(() => {
+            startScrollAnimations();
+        })
         .start();
 });
 
+// SLIDE UP ON SCROLL - START
+
+function startScrollAnimations() {
+    const slideUpElements = document.querySelectorAll('.slide-up-on-scroll');
+
+    slideUpElements.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    slideUpElements.forEach(el => observer.observe(el));
+}
+
+// SLIDE UP ON SCROLL - END
 
 function changeTheme(event) {
     event.preventDefault();
@@ -42,24 +69,6 @@ function changeTheme(event) {
 
     }
 }
-
-// FOR SCROLLING
-const slideUpElements = document.querySelectorAll('.intro-subtitle');
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // stop watching after first reveal
-        }
-    });
-}, {
-    threshold: 0.1
-});
-
-slideUpElements.forEach(el => observer.observe(el));
-// END OF SCROLLING
-
 
 let themeButton = document.querySelector("#theme-button");
 themeButton.addEventListener('click', changeTheme);
