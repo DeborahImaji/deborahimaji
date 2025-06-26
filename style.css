@@ -263,3 +263,8 @@ body {
 }
 
 /* Scroll slide up */
+
+.intro-art {
+    margin: 0 auto;
+    max-width: 80%;
+}
