@@ -33,13 +33,25 @@ body {
 }
 
 .navbar {
-    padding: 8px 16px;
+    background-color: #F3F1EF;
+    padding: 24px 16px;
+    position: fixed;
+    top: 0;
+    transition: all 800ms ease-in-out;
+    width: 100%;
+}
+
+.dark .navbar {
+    background-color: #020925;
+    transition: all 800ms ease-in-out;
 }
 
 .navbar-container {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    margin: 5px 46.333px;
+    padding: 5px 46.333px;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -162,10 +174,11 @@ body {
 }
 
 .intro-heading-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -266,5 +279,11 @@ body {
 
 .intro-art {
     margin: 0 auto;
-    max-width: 85%;
+    max-width: 80%;
+}
+
+@media (max-width: 768px) {
+    .intro-art {
+        max-width: 90%;
+    }
 }
