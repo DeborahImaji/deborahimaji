@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 768px) {
     .body-container {
-        padding: 40px 24px;
+        padding: 40px 20px;
     }
 }
 
@@ -165,6 +165,7 @@ body {
     .navbar-right {
         display: flex;
         justify-content: flex-end;
+        margin: 0 15px;
         width: 100%;
     }
 
@@ -285,5 +286,50 @@ body {
 @media (max-width: 768px) {
     .intro-art {
         max-width: 90%;
+    }
+}
+
+/* ABOUT ME */
+.about-me {
+    margin: 0 132.333px;
+    padding-top: 100px;
+}
+
+.about-me-heading {
+    color: #000000;
+    font-size: 46px;
+}
+
+.dark .about-me-heading {
+    color: #E8A1FD;
+}
+
+.about-me-h2-hr {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.about-me-h2-hr hr {
+    border: 1px solid #3b3b3b;
+    width: 70%;
+}
+
+.dark .about-me-h2-hr hr {
+    border: 1px solid #e7a1fd81;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        margin: 0;
+        padding-top: 103.792px;
+    }
+
+    .about-me-heading {
+        font-size: 32px;
+    }
+
+    .about-me-hr {
+        display: none;
     }
 }
