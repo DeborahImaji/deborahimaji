@@ -294,3 +294,44 @@ body {
     margin: 0 132.333px;
     padding-top: 100px;
 }
+
+.about-me-header {
+    padding-bottom: 42px;
+}
+
+.about-me-title {
+    color: #000000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+}
+
+.about-me-title::after {
+    background-color: #F3F1EF;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 1px;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 39px;
+    text-align: left;
+    visibility: visible;
+    width: 300px;
+}
+
+.dark .about-me-title {
+    color: #e8a1fd;
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 0;
+        padding-top: 103.792px;
+    }
+
+    .about-me-title {
+        font-size: 32px;
+    }
+}
