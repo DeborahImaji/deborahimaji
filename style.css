@@ -332,17 +332,19 @@ body {
 }
 
 .about-me-desc1 {
+    box-sizing: border-box;
     color: #000000;
     display: block;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 33px;
     margin-bottom: 16px;
+    margin-top: 0;
     text-align: justify;
 }
 
 .dark .about-me-desc1 {
-    color: #e7a1fdbb;
+    color: #f7dfffd9;
 }
 
 .about-me-desc1 b {
@@ -353,6 +355,44 @@ body {
     color: #3C6FE6;
     font-weight: 600;
     text-decoration: none;
+}
+
+.about-me-desc2 {
+    box-sizing: border-box;
+    color: #000000;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 0;
+    text-align: justify;
+}
+
+.dark .about-me-desc2 {
+    color: #f7dfffd9;
+}
+
+.tech-stack {
+    box-sizing: border-box;
+    color: #000000;
+    display: grid;
+    font-size: 20px;
+    font-weight: 400;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+    line-height: 33px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 16px;
+    margin-left: -40px;
+    padding-inline-start: 40px;
+    padding-top: 20px;
+    text-align: justify;
+    text-size-adjust: 100%;
+}
+
+.dark .tech-stack {
+    color: #f7dfffd9;
 }
 
 @media (max-width: 768px) {
@@ -367,5 +407,15 @@ body {
 
     .about-me-hr {
         display: none;
+    }
+
+    .about-me-desc1 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .about-me-desc2 {
+        font-size: 16px;
+        line-height: 25px;
     }
 }
