@@ -302,7 +302,7 @@ body {
 
 .about-me-title {
     color: #000000;
-    font-size: 46px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 69px;
     text-align: left;
@@ -335,9 +335,9 @@ body {
     box-sizing: border-box;
     color: #000000;
     display: block;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 32px;
     margin-bottom: 16px;
     margin-top: 0;
     text-align: justify;
@@ -361,9 +361,9 @@ body {
     box-sizing: border-box;
     color: #000000;
     display: block;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 32px;
     margin: 0;
     text-align: justify;
 }
@@ -376,15 +376,16 @@ body {
     box-sizing: border-box;
     color: #000000;
     display: grid;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     grid-template-columns: repeat(2, minmax(150px, 10px));
-    line-height: 33px;
+    line-height: 32px;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
     margin-bottom: 16px;
     margin-left: -40px;
+    margin-top: 0;
     padding-inline-start: 40px;
     padding-top: 20px;
     text-align: justify;
@@ -393,6 +394,11 @@ body {
 
 .dark .tech-stack {
     color: #f7dfffd9;
+}
+
+.tech-stack-item {
+    display: flex;
+    max-width: 50px;
 }
 
 @media (max-width: 768px) {
