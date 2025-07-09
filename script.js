@@ -59,7 +59,9 @@ function changeTheme(event) {
 
         themeIcon.src = "assets/icons/theme/moon.png";
 
-        techStackArrows.forEach.src = "assets/icons/right-arrow-light.png";
+        techStackArrows.forEach(techStackArrows => {
+            techStackArrows.src = "assets/icons/right-arrow-light.png"
+        });
 
     } else {
 
@@ -71,7 +73,9 @@ function changeTheme(event) {
 
         themeIcon.src = "assets/icons/theme/sun.png";
 
-        techStackArrows.forEach.src = "assets/icons/right-arrow-dark.png";
+        techStackArrows.forEach(techStackArrows => {
+            techStackArrows.src = "assets/icons/right-arrow-dark.png"
+        });
 
     }
 }

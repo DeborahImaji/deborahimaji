@@ -410,6 +410,23 @@ body {
     padding-left: 7px;
 }
 
+.about-me-desc3 {
+    box-sizing: border-box;
+    color: #000000;
+    display: block;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-block-end: 16px;
+    margin-top: 0;
+    text-align: justify;
+    text-size-adjust: 100%;
+}
+
+.dark .about-me-desc3 {
+    color: #f7dfffd9;
+}
+
 @media (max-width: 768px) {
     .about {
         margin: 0;
@@ -426,16 +443,21 @@ body {
 
     .about-me-desc1 {
         font-size: 16px;
-        line-height: 25px;
+        line-height: 23px;
     }
 
     .about-me-desc2 {
         font-size: 16px;
-        line-height: 25px;
+        line-height: 23px;
     }
 
     .tech-stack {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .about-me-desc3 {
         font-size: 16px;
-        line-height: 25px;
+        line-height: 23px;
     }
 }
