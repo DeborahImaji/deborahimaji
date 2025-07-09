@@ -376,7 +376,7 @@ body {
     box-sizing: border-box;
     color: #000000;
     display: grid;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     grid-template-columns: repeat(2, minmax(150px, 10px));
     line-height: 32px;
@@ -397,8 +397,17 @@ body {
 }
 
 .tech-stack-item {
+    align-items: center;
     display: flex;
-    max-width: 50px;
+}
+
+.tech-stack-arrow {
+    max-height: 8px;
+    max-width: 8px;
+}
+
+.tech-stack-name {
+    padding-left: 7px;
 }
 
 @media (max-width: 768px) {

@@ -47,6 +47,8 @@ function changeTheme(event) {
 
     let themeIcon = document.querySelector("#theme-icon");
 
+    let techStackArrows = document.querySelectorAll(".tech-stack-arrow");
+
     if (bodyElement.classList.contains("dark")) {
 
         bodyElement.classList.remove("dark");
@@ -57,6 +59,8 @@ function changeTheme(event) {
 
         themeIcon.src = "assets/icons/theme/moon.png";
 
+        techStackArrows.forEach.src = "assets/icons/right-arrow-light.png";
+
     } else {
 
         bodyElement.classList.add("dark");
@@ -66,6 +70,8 @@ function changeTheme(event) {
         linkedinIcon.src = "assets/icons/socials/linkedin-white.png";
 
         themeIcon.src = "assets/icons/theme/sun.png";
+
+        techStackArrows.forEach.src = "assets/icons/right-arrow-dark.png";
 
     }
 }
