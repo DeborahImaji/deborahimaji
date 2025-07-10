@@ -331,6 +331,10 @@ body {
     background-color: #e7a1fd82;
 }
 
+.about-me-content {
+    display: flex;
+}
+
 .about-me-desc1 {
     box-sizing: border-box;
     color: #000000;
@@ -427,6 +431,26 @@ body {
     color: #f7dfffd9;
 }
 
+.about-me-image-container {
+    padding-left: 40px;
+}
+
+.about-me-image {
+    border-radius: 10px;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    max-height: 300px;
+    max-width: 300px;
+    vertical-align: middle;
+}
+
 @media (max-width: 768px) {
     .about {
         margin: 0;
@@ -459,5 +483,9 @@ body {
     .about-me-desc3 {
         font-size: 16px;
         line-height: 23px;
+    }
+
+    .about-me-image {
+        display: none;
     }
 }
