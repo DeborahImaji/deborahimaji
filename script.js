@@ -2,7 +2,7 @@
 window.addEventListener("DOMContentLoaded", function () {
     new Typewriter("#gradient-intro", {
         autoStart: true,
-        delay: 120,
+        delay: 50,
         loop: false
     })
         .typeString("HELLO WORLD,<br />I AM DEBORAH IMAJI.")
@@ -15,16 +15,12 @@ window.addEventListener("DOMContentLoaded", function () {
 // SLIDE UP ON SCROLL - START
 
 function startScrollAnimations() {
-    const slideUpElements = document.querySelectorAll('.slide-up-on-scroll');
-
-    slideUpElements.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.1}s`;
-    });
+    const slideUpOnScrollElements = document.querySelectorAll(".slide-up-on-scroll");
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show');
+                entry.target.classList.add("visible");
                 observer.unobserve(entry.target);
             }
         });
@@ -32,7 +28,7 @@ function startScrollAnimations() {
         threshold: 0.1
     });
 
-    slideUpElements.forEach(el => observer.observe(el));
+    slideUpOnScrollElements.forEach(el => observer.observe(el));
 }
 
 // SLIDE UP ON SCROLL - END
