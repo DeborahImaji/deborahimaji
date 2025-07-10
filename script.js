@@ -29,6 +29,10 @@ function startScrollAnimations() {
     });
 
     slideUpOnScrollElements.forEach(el => observer.observe(el));
+
+    document.querySelectorAll(".tech-stack-item.slide-up-on-scroll").forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.1}s`;
+    });
 }
 
 // SLIDE UP ON SCROLL - END
