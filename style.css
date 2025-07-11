@@ -39,6 +39,7 @@ body {
     top: 0;
     transition: all 800ms ease-in-out;
     width: 100%;
+    z-index: 9999;
 }
 
 .dark .navbar {
@@ -457,7 +458,7 @@ body {
     font-size: 19px;
     font-weight: 400;
     line-height: 32px;
-    margin: 0 132.333;
+    margin: 0 132.333px;
     max-width: 1000px;
     min-height: 188.667px;
     padding-top: 100px;
