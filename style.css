@@ -1,8 +1,27 @@
 body {
     background-color: #11111B;
+    color: #FFF;
     transition: all 400ms ease-in-out;
 }
 
 .light {
     background-color: #ECE7E1;
+    color: #000;
+}
+
+.app {
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-glow {
+    background: radial-gradient(circle, #8000ff, transparent 70%);
+    filter: blur(200px);
+    height: 700px;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 700px;
+    z-index: 0;
 }
