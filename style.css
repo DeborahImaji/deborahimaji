@@ -1,0 +1,8 @@
+body {
+    background-color: #11111B;
+    transition: all 400ms ease-in-out;
+}
+
+.light {
+    background-color: #ECE7E1;
+}
