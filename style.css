@@ -1,6 +1,7 @@
 body {
     background-color: #11111B;
     color: #FFF;
+    overflow-x: clip;
     transition: all 400ms ease-in-out;
 }
 
@@ -10,17 +11,31 @@ body {
 }
 
 .app {
+
     position: relative;
 }
 
 .bg-glow {
     background: radial-gradient(circle, #cf59e6, transparent 70%);
     filter: blur(200px);
-    height: 700px;
+    height: 900px;
     opacity: 0.6;
     position: absolute;
-    right: -350px;
-    top: 0;
-    width: 700px;
+    right: -450px;
+    top: -225px;
+    width: 900px;
     z-index: 0;
+    animation: pulsate 2s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.7);
+    }
 }
