@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #11111B;
     color: #FFF;
-    overflow-x: clip;
     transition: all 400ms ease-in-out;
 }
 
@@ -10,32 +15,23 @@ body {
     color: #000;
 }
 
-.app {
-
-    position: relative;
-}
-
-.bg-glow {
-    background: radial-gradient(circle, #cf59e6, transparent 70%);
-    filter: blur(200px);
-    height: 900px;
-    opacity: 0.6;
+.blob {
+    background-color: #cf59e6;
+    border-radius: 50%;
+    filter: blur(300px);
+    height: 100vh;
     position: absolute;
-    right: -450px;
-    top: -225px;
-    width: 900px;
-    z-index: 0;
-    animation: pulsate 2s ease-in-out infinite;
+    right: -15%;
+    top: 0px;
+    width: 600px;
+    animation: 1s linear 0s infinite alternate-reverse none running breath;
 }
 
-@keyframes pulsate {
-
-    0%,
-    100% {
-        transform: scale(1);
+@keyframes breath {
+    0% {
+        opacity: 0.3;
     }
-
-    50% {
-        transform: scale(0.7);
+    100% {
+        opacity: 0.5;
     }
 }
