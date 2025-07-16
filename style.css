@@ -8,11 +8,36 @@ body {
     background-color: #11111B;
     color: #FFF;
     transition: all 400ms ease-in-out;
+    overflow-x: hidden;
 }
 
 .light {
     background-color: #ECE7E1;
     color: #000;
+}
+
+header {
+    height: 115px;
+}
+
+.navbar {
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to bottom right, #1a1a29, rgba(27, 27, 40, 0));
+    border: 1px solid #e2e2e207;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+    position: fixed;
+    width: 80%;
+    z-index: 999;
+}
+
+.light .navbar {
+    background-image: linear-gradient(to bottom right, #e7e2db, #ece7e100);
+    border: 1px solid #d1d6eb;
 }
 
 .blob {
@@ -33,5 +58,11 @@ body {
     }
     100% {
         opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .blob {
+        display: none;
     }
 }
