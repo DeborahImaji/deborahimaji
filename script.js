@@ -1,4 +1,4 @@
-function changeTheme(event) {
+function changeTheme (event) {
     event.preventDefault();
 
     let bodyElement = document.querySelector("body");
