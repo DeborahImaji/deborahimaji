@@ -55,12 +55,12 @@ header {
 
 .nav-link {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 22px;
     margin: 0 30px;
     text-decoration: none;
 }
 
-.current {
+.nav-link .current {
     color: blue;
 }
 

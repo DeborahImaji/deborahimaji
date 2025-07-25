@@ -10,20 +10,24 @@ function changeTheme (event) {
     }
 }
 
-function setCurrentHome (event) {
-    event.preventDefault();
+const links = document.querySelectorAll('.nav-link');
 
-    navHome = document.querySelector("#nav-link");
+// Highlight the link when clicked
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    links.forEach(l => l.classList.remove('current'));
+    link.classList.add('current');
+  });
+});
 
-    if (navHome.classList.contains("current")) {
-        navHome.classList.remove("current");
-    } else {
-        navHome.classList.add("current");
-    }
-}
-
-let navHome = document.querySelector("#nav-link");
-navHome.addEventListener('click', setCurrentHome);
+// Highlight the correct link on page load (based on URL hash)
+window.addEventListener('DOMContentLoaded', () => {
+  const currentHash = window.location.hash || '#home';
+  const activeLink = document.querySelector(`.nav-link[href="${currentHash}"]`);
+  if (activeLink) {
+    activeLink.classList.add('current');
+  }
+});
 
 let themeButton = document.querySelector("#theme-button");
 themeButton.addEventListener('click', changeTheme);
