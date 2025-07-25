@@ -2,8 +2,8 @@
     font-family: "NTR", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 * {
     transition: all 400ms ease-in-out;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .navbar {
@@ -42,7 +42,7 @@ header {
 .navbar-brand {
     margin-left: 60px;
     margin-top: 15px;
-    width: 70px;
+    width: 60px;
 }
 
 .navbar-brand:hover {
@@ -55,12 +55,12 @@ header {
 
 .nav-link {
     color: #FFFFFF;
-    font-size: 22px;
-    margin: 0 30px;
+    font-size: 20px;
+    margin: 0 25px;
     text-decoration: none;
 }
 
-.nav-link .current {
+.nav-link.current {
     color: blue;
 }
 
