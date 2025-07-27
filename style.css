@@ -60,8 +60,14 @@ header {
     text-decoration: none;
 }
 
-.nav-link.current {
-    color: blue;
+.nav-link:hover::before {
+    content: "●";
+    margin-right: 10px;
+}
+
+.nav-link.active-link::before {
+    content: "●";
+    margin-right: 10px;
 }
 
 .hamburger-menu {
