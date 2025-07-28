@@ -4,14 +4,11 @@
     font-style: normal;
 }
 
-* {
-    transition: all 400ms ease-in-out;
-}
-
 body {
     background-color: #11111B;
     color: #FFFFFF;
     font-family: "NTR";
+    transition: all 400ms ease-in-out;
 }
 
 .light {
@@ -25,6 +22,7 @@ header {
 
 .navbar {
     align-items: center;
+    backdrop-filter: blur(10px);
     background-image: linear-gradient(to bottom right, #1A1A29, rgba(27, 27, 40, 0));
     border: 1px solid #E2E2E207;
     border-radius: 50px;
@@ -35,8 +33,14 @@ header {
     overflow-y: hidden;
     position: fixed;
     transform: translateX(-50%);
+    transition: all 400ms ease-in-out;
     width: 80%;
     z-index: 999;
+}
+
+.light .navbar {
+    background-image: linear-gradient(to bottom right, #E7E2DB, #ECE7E100);
+    border: 1px solid #D1D6EB;
 }
 
 .navbar-brand {
@@ -56,18 +60,26 @@ header {
 .nav-link {
     color: #FFFFFF;
     font-size: 20px;
-    margin: 0 25px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
-.nav-link:hover::before {
-    content: "●";
-    margin-right: 10px;
+.light .nav-link {
+    color: #000000;
 }
 
-.nav-link.active-link::before {
+.nav-link::before {
     content: "●";
     margin-right: 10px;
+    opacity: 0;
+}
+
+.nav-link:hover::before {
+    opacity: 1;
+}
+
+.nav-link.active::before {
+    opacity: 1;
 }
 
 .hamburger-menu {
