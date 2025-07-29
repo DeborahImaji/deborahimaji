@@ -37,19 +37,55 @@
                             <a href="#experience" class="nav-link">/ Experience</a>
                             <a href="#projects" class="nav-link">/ Projects</a>
                         </div>
-                        <div class="hamburger-menu">
-                        <button class="hamburger-menu">
-                            <span class="burger-bar" id="burger-bar1"></span>
-                            <span class="burger-bar" id="burger-bar2"></span>
-                            <span class="burger-bar" id="burger-bar3"></span>
-                        </button>
-                        </div>
                     </div>
                 </nav>
     
             </header>
     
             <div class="content">
+
+                <!-- Here is some hamburger code for mobile users -->
+
+                <div class="hamburger" id="hamburger">
+                    <div class="hamburgerbase">
+                        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+                            <span class="burger-bar" id="burger-bar1"></span>
+                            <span class="burger-bar" id="burger-bar2"></span>
+                            <span class="burger-bar" id="burger-bar3"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mobiletogglemenu" id="mobiletogglemenu">
+                    <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                        <li id="intro-mobile-tab" class="mobile-navbar-tabs-li intro activeThismobiletab" onclick="hidemenubyli()">
+                            <a href="#intro" tabindex="0" aria-label="intro menu button">
+                                / Home
+                            </a>
+                        </li>
+              
+                        <li id="about-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                            <a href="#about" tabindex="0" aria-label="about menu button">
+                                / About
+                            </a>
+                        </li>
+
+                        <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+                            <a href="#experience" tabindex="0" aria-label="experience menu button">
+                                / Experience
+                            </a>
+                        </li>
+
+                        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                            <a href="#projects" tabindex="0" aria-label="projects menu button">
+                                / Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- This is the end of the hamburger code -->
+
     
                 <div id="intro" class="section">
     
