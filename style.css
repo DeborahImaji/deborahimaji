@@ -16,6 +16,12 @@ body {
     color: #000000;
 }
 
+.cursor-inner {
+    background-color: #6bc5f8;
+    height: 8px;
+    width: 8px; 
+}
+
 header {
     margin-top: 30px;
 }
@@ -46,6 +52,7 @@ header {
 .navbar-brand {
     margin-left: 60px;
     margin-top: 15px;
+    transition: all 400ms ease-in-out;
     width: 60px;
 }
 
@@ -60,7 +67,7 @@ header {
 .nav-link {
     color: #FFFFFF;
     font-size: 20px;
-    margin: 0 10px;
+    margin: 0 25px;
     text-decoration: none;
 }
 
@@ -72,6 +79,7 @@ header {
     content: "●";
     margin-right: 10px;
     opacity: 0;
+    transition: all 400ms ease-in-out;
 }
 
 .nav-link:hover::before {
