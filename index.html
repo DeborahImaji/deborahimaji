@@ -1,118 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="assets/favicon/favicon.ico">
-        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-        <link rel="manifest" href="assets/favicon/site.webmanifest">
-        <title>Deborah Imaji</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <title>Deborah Imaji</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="app">
+    <div class="app">
 
-            <header>
+        <header>
 
-                <div class="cursor-inner" id="cursor-inner"></div>
-                <div class="cursor-outer" id="cursor-outer"></div>
-    
-                <nav class="navbar">
-                    <div class="navbar-left">
-                        <img class="navbar-brand" src="assets/images/deborahimaji-logo.png"
-                            alt="Deborah Imaji's 3d computer logo">
-                    </div>
-                    <div class="navbar-right">
-                        <div class="navbar-links">
-                            <a href="#intro" class="nav-link active" id="nav-home">/ Home</a>
-                            <a href="#about" class="nav-link">/ About</a>
-                            <a href="#experience" class="nav-link">/ Experience</a>
-                            <a href="#projects" class="nav-link">/ Projects</a>
-                        </div>
-                    </div>
-                </nav>
-    
-            </header>
-    
-            <div class="content">
+            <div class="cursor-inner" id="cursor-inner"></div>
+            <div class="cursor-outer" id="cursor-outer"></div>
 
-                <!-- Here is some hamburger code for mobile users -->
-
-                <div class="hamburger" id="hamburger">
-                    <div class="hamburgerbase">
-                        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-                            <span class="burger-bar" id="burger-bar1"></span>
-                            <span class="burger-bar" id="burger-bar2"></span>
-                            <span class="burger-bar" id="burger-bar3"></span>
-                        </button>
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <img class="navbar-brand" src="assets/images/deborahimaji-logo.png"
+                        alt="Deborah Imaji's 3d computer logo">
+                </div>
+                <div class="navbar-right">
+                    <div class="navbar-links">
+                        <a href="#intro" class="nav-link active" id="nav-home">/ Home</a>
+                        <a href="#about" class="nav-link">/ About</a>
+                        <a href="#experience" class="nav-link">/ Experience</a>
+                        <a href="#projects" class="nav-link">/ Projects</a>
                     </div>
                 </div>
+            </nav>
 
-                <div class="mobiletogglemenu" id="mobiletogglemenu">
-                    <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-                        <li id="intro-mobile-tab" class="mobile-navbar-tabs-li intro activeThismobiletab" onclick="hidemenubyli()">
-                            <a href="#intro" tabindex="0" aria-label="intro menu button">
-                                / Home
-                            </a>
-                        </li>
-              
-                        <li id="about-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-                            <a href="#about" tabindex="0" aria-label="about menu button">
-                                / About
-                            </a>
-                        </li>
+        </header>
 
-                        <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
-                            <a href="#experience" tabindex="0" aria-label="experience menu button">
-                                / Experience
-                            </a>
-                        </li>
+        <div class="content">
 
-                        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-                            <a href="#projects" tabindex="0" aria-label="projects menu button">
-                                / Projects
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- This is the end of the hamburger code -->
+            <!-- Here is some hamburger code for mobile users -->
 
-    
-                <div id="intro" class="section">
-    
-                    <button id="theme-button">Change Theme</button>
-    
-                    <div style="height: 800px;"></div>
-    
+            <div class="hamburger" id="hamburger">
+                <div class="hamburgerbase">
+                    <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+                        <span class="burger-bar" id="burger-bar1"></span>
+                        <span class="burger-bar" id="burger-bar2"></span>
+                        <span class="burger-bar" id="burger-bar3"></span>
+                    </button>
                 </div>
-    
-                <div id="about" class="section">
-                    <div style="height: 800px;"></div>
-                </div>
-    
-                <div id="experience" class="section">
-                    <div style="height: 800px;"></div>
-                </div>
-    
-                <div id="projects" class="section">
-                    <div style="height: 1600px;"></div>
-                </div>
-    
             </div>
-    
+
+            <div class="mobiletogglemenu" id="mobiletogglemenu">
+                <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                    <li id="intro-mobile-tab" class="mobile-navbar-tabs-li intro activeThismobiletab"
+                        onclick="hidemenubyli()">
+                        <a href="#intro" tabindex="0" aria-label="intro menu button">
+                            / Home
+                        </a>
+                    </li>
+
+                    <li id="about-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                        <a href="#about" tabindex="0" aria-label="about menu button">
+                            / About
+                        </a>
+                    </li>
+
+                    <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+                        <a href="#experience" tabindex="0" aria-label="experience menu button">
+                            / Experience
+                        </a>
+                    </li>
+
+                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                        <a href="#projects" tabindex="0" aria-label="projects menu button">
+                            / Projects
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- This is the end of the hamburger code -->
+
+
+            <div id="intro" class="section">
+
+                <button id="theme-button">Change Theme</button>
+
+                <div style="height: 800px;"></div>
+
+            </div>
+
+            <div id="about" class="section">
+                <div style="height: 800px;"></div>
+            </div>
+
+            <div id="experience" class="section">
+                <div style="height: 800px;"></div>
+            </div>
+
+            <div id="projects" class="section">
+                <div style="height: 1600px;"></div>
+            </div>
+
         </div>
 
-        <script src="script.js"></script>
+    </div>
 
-    </body>
+    <script src="script.js"></script>
+
+</body>
 
 </html>
