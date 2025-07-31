@@ -4,6 +4,12 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #11111B;
     color: #FFFFFF;
@@ -129,6 +135,10 @@ header {
 
 @media screen and (max-width:998px) {
 
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
     #hamburger-button,
     .hamburger {
         background-color: transparent;
@@ -169,20 +179,28 @@ header {
         background-color: #FFFFFF;
     }
 
+    .light .activeThismobiletab:before,
+    .light .burger-bar,
+    .light .hamburger-animation1,
+    .light .hamburger-animation2,
+    .light .hamburger-animation3 {
+        background-color: #000000;
+    }
+
     .hamburgerbase {
         width: 80%;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding: 20px;
+        padding: 45px 20px;
     }
 
     #hamburger-button {
         font-size: 3rem;
         font-weight: 800;
-        width: 3rem;
-        height: 2rem;
+        width: 2.4rem;
+        height: 1.6rem;
         border: none;
         display: flex;
         flex-direction: column;

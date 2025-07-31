@@ -13,7 +13,34 @@ function changeTheme(event) {
 let themeButton = document.querySelector("#theme-button");
 themeButton.addEventListener('click', changeTheme);
 
-// Here is some scroll spy code - I'm experimenting
+
+// Let us experiment with some mobile hamburger menu code
+
+let emptyArea = document.getElementById("emptyarea");
+let mobileTogglemenu = document.getElementById("mobiletogglemenu");
+
+// Toggle menu by clicking on hamburger
+function hamburgerMenu() {
+  document.body.classList.toggle("stopscrolling");
+  document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
+  document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
+  document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
+  document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
+}
+
+// close mobile toggle menu by clicking on LI
+function hidemenubyli() {
+  document.body.classList.toggle("stopscrolling");
+  document.getElementById("mobiletogglemenu").classList.remove("show-toggle-menu");
+  document.getElementById("burger-bar1").classList.remove("hamburger-animation1");
+  document.getElementById("burger-bar2").classList.remove("hamburger-animation2");
+  document.getElementById("burger-bar3").classList.remove("hamburger-animation3");
+}
+
+// This is the end of the mobile hamburger menu code
+
+
+// Scroll spy code
 
 // Get all the section elements
 const sections = document.querySelectorAll('.section');
@@ -21,9 +48,17 @@ const sections = document.querySelectorAll('.section');
 // Get all the navigation links
 const navLinks = document.querySelectorAll('.nav-link');
 
+// Get all the mobile navigation links
+const mobilenavLi = document.querySelectorAll('.mobiletogglemenu .mobile-navbar-tabs-ul li');
+
 // Remove the 'active' class from all nav links
 function removeActiveClass() {
     navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Mobile?
+    mobilenavLi.forEach(link => {
         link.classList.remove('active');
     });
 }
@@ -103,3 +138,5 @@ document.addEventListener("mousemove", function (e) {
     });
   });
 });
+
+
