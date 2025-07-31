@@ -48,17 +48,9 @@ const sections = document.querySelectorAll('.section');
 // Get all the navigation links
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Get all the mobile navigation links
-const mobilenavLi = document.querySelectorAll('.mobiletogglemenu .mobile-navbar-tabs-ul li');
-
 // Remove the 'active' class from all nav links
 function removeActiveClass() {
     navLinks.forEach(link => {
-        link.classList.remove('active');
-    });
-
-    // Mobile?
-    mobilenavLi.forEach(link => {
         link.classList.remove('active');
     });
 }
