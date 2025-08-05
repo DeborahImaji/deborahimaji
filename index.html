@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,10 +36,10 @@
                 </div>
                 <div class="navbar-right">
                     <div class="navbar-links">
-                        <a href="#intro" class="nav-link active" id="nav-home">/ Home</a>
-                        <a href="#about" class="nav-link">/ About</a>
-                        <a href="#experience" class="nav-link">/ Experience</a>
-                        <a href="#projects" class="nav-link">/ Projects</a>
+                        <a href="#" class="nav-link active" id="nav-home">&#60;/Home&#62;</a>
+                        <a href="#about" class="nav-link"> &#60;/About&#62;</a>
+                        <a href="#experience" class="nav-link"> &#60;/Experience&#62;</a>
+                        <a href="#projects" class="nav-link">&#60;/Projects&#62;</a>
                     </div>
                 </div>
             </nav>
@@ -58,28 +62,29 @@
 
             <div class="mobiletogglemenu" id="mobiletogglemenu">
                 <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-                    <li id="intro-mobile-tab" class="mobile-navbar-tabs-li intro activeThismobiletab"
-                        onclick="hidemenubyli()">
-                        <a href="#intro" tabindex="0" aria-label="intro menu button">
-                            / Home
+                    <li id="intro-mobile-tab" class="mobile-navbar-tabs-li intro" onclick="hidemenuAndScroll(this)">
+                        <a href="#" tabindex="0" aria-label="intro menu button">
+                            &#60;/Home&#62;
                         </a>
                     </li>
 
-                    <li id="about-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                    <li id="about-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenuAndScroll(this)">
                         <a href="#about" tabindex="0" aria-label="about menu button">
-                            / About
+                            &#60;/About&#62;
                         </a>
                     </li>
 
-                    <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+                    <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience"
+                        onclick="hidemenuAndScroll(this)">
                         <a href="#experience" tabindex="0" aria-label="experience menu button">
-                            / Experience
+                             &#60;/Experience&#62;
                         </a>
                     </li>
 
-                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects"
+                        onclick="hidemenuAndScroll(this)">
                         <a href="#projects" tabindex="0" aria-label="projects menu button">
-                            / Projects
+                            &#60;/Projects&#62;
                         </a>
                     </li>
                 </ul>
@@ -90,9 +95,22 @@
 
             <div id="intro" class="section">
 
-                <button id="theme-button">Change Theme</button>
+                <div class="intro-title">
+                    <h1>
+                        <span class="intro-title1">HelloWorld(); I'm</span><br />
+                        Deborah Imaji.
+                    </h1>
+                </div>
 
-                <div style="height: 800px;"></div>
+                <div class="intro-subtitle">
+                    <h2>I create digital experiences.</h2>
+                </div>
+
+                <div class="intro-desc">
+                    <p>I am a developer with a primary interest in software engineering.</p>
+                </div>
+
+                <button id="theme-button">Change Theme</button>
 
             </div>
 
