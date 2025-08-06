@@ -20,7 +20,7 @@
   body {
       background-color: #11111B;
       color: #FFFFFF;
-      font-family: "NTR", sans-serif;
+      font-family: 'Whitney', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
       transition: all 400ms ease-in-out;
   }
   
@@ -331,12 +331,27 @@
   /* End of the hamburger menu code */
   
   .content {
-    margin: 0 400px;
-      padding-top: 300px;
+      padding-top: 200px;
+  }
+
+  .section {
+    margin: 100px 400px;
   }
   
   .intro-title1 {
-      font-family: "Fira Code", monospace;
-      font-size: 33.6px;
-      font-weight: 500;
+    font-family: "Fira Code", monospace;
+    font-size: 33.6px;
+    font-weight: 500;
   }
+
+@media screen and (max-width:998px) {
+    .section {
+        margin: 50px 150px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .section {
+        margin: 25px 65px;
+    }
+}
