@@ -331,14 +331,12 @@
   /* End of the hamburger menu code */
   
   .content {
-      padding-top: 200px;
-  }
-  
-  .section {
-      margin: 100px;
+    margin: 0 400px;
+      padding-top: 300px;
   }
   
   .intro-title1 {
       font-family: "Fira Code", monospace;
+      font-size: 33.6px;
       font-weight: 500;
   }
