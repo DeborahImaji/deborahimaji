@@ -1,9 +1,9 @@
 .fira-code {
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     font-optical-sizing: auto;
     font-weight: 300 700;
     font-style: normal;
-  }
+}
   
   .ntr-regular {
       font-family: "NTR", sans-serif;
@@ -27,6 +27,10 @@
   .light {
       background-color: #ECE7E1;
       color: #000000;
+  }
+
+  span {
+    cursor: default;
   }
   
   .cursor-inner {
@@ -337,12 +341,100 @@
   .section {
     margin: 100px 400px;
   }
-  
-  .intro-title1 {
-    font-family: "Fira Code", monospace;
-    font-size: 33.6px;
-    font-weight: 500;
+
+  .hello-world {
+    align-items: flex-end;
+    display: flex;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.25rem;
+    font-weight: 450;
+    width: fit-content;
   }
+
+  .intro-name {
+    align-items: flex-end;
+    display: flex;
+    font-size: 5rem;
+    font-weight: 600;
+    width: fit-content;
+  }
+
+  .jello:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #03e6ff;
+    -webkit-animation: .9s both jello-vertical;
+    animation: .9s both jello-vertical
+}
+
+@-webkit-keyframes jello-vertical {
+
+    0%,
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(.85, 1.15, 1);
+        transform: scale3d(.85, 1.15, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1)
+    }
+}
+
+@keyframes jello-vertical {
+
+    0%,
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(.85, 1.15, 1);
+        transform: scale3d(.85, 1.15, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1)
+    }
+}
 
 @media screen and (max-width:998px) {
     .section {
