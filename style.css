@@ -335,7 +335,7 @@
   /* End of the hamburger menu code */
   
   .content {
-      padding-top: 200px;
+      padding-top: 250px;
   }
 
   .section {
@@ -346,7 +346,7 @@
     align-items: flex-end;
     display: flex;
     font-family: 'Fira Code', monospace;
-    font-size: 2.25rem;
+    font-size: 2.15rem;
     font-weight: 450;
     width: fit-content;
   }
@@ -354,8 +354,9 @@
   .intro-name {
     align-items: flex-end;
     display: flex;
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: 5.25rem;
+    font-weight: 700;
+    margin-top: 5px;
     width: fit-content;
   }
 
@@ -436,13 +437,72 @@
     }
 }
 
+.intro-name {
+    background: -webkit-linear-gradient(135deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-name {
+    align-items: flex-start;
+    background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 400% 400%;
+    -webkit-animation: 3s infinite gradient;
+    animation: 3s infinite gradient;
+}
+
+@keyframes gradient {
+
+    0%,
+    100% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 80%
+    }
+
+    .content {
+        padding-top: 200px;
+    }
+
+    .section {
+        margin: 75px 250px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .content {
+        padding-top: 150px;
+    }
+}
+
 @media screen and (max-width:998px) {
+    html {
+        font-size: 70%;
+    }
+
+    .content {
+        padding-top: 150px;
+    }
+
     .section {
         margin: 50px 150px;
     }
 }
 
 @media screen and (max-width:500px) {
+    html {
+        font-size: 60%;
+    }
+
     .section {
         margin: 25px 65px;
     }
