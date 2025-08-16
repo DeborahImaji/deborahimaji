@@ -464,6 +464,15 @@ header {
     }
 }
 
+.intro-subtitle h2 {
+    align-items: flex-end;
+    display: flex;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 2.5px;
+    width: fit-content;
+}
+
 @media screen and (max-width:1920px) {
     html {
         font-size: 80%
