@@ -3,10 +3,22 @@ function changeTheme(event) {
 
   let bodyElement = document.querySelector("body");
 
+  let introGithubIcon = document.querySelector("#intro-github-icon");
+  let introLinkedinIcon = document.querySelector("#intro-linkedin-icon");
+  let themeButtonIcon = document.querySelector("#theme-button-icon");
+
   if (bodyElement.classList.contains("light")) {
     bodyElement.classList.remove("light");
+
+    introGithubIcon.src = `assets/icons/github-dark.png`;
+    introLinkedinIcon.src = `assets/icons/linkedin-dark.png`;
+    themeButtonIcon.src = `assets/icons/theme-moon.png`;
   } else {
     bodyElement.classList.add("light");
+
+    introGithubIcon.src = `assets/icons/github-light.png`;
+    introLinkedinIcon.src = `assets/icons/linkedin-light.png`;
+    themeButtonIcon.src = `assets/icons/theme-sun.png`;
   }
 }
 
