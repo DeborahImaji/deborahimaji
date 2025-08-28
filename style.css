@@ -384,6 +384,7 @@ header {
     from {
         opacity: .3
     }
+
     to {
         opacity: .5
     }
@@ -522,7 +523,7 @@ header {
 
 .intro-desc {
     font-family: 'Fira Code', monospace;
-   font-size: 1.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.5rem;
     margin-top: 20px;
@@ -538,8 +539,8 @@ header {
 }
 
 .intro-contact a {
-   margin-right: 60px;
-   text-decoration: none;
+    margin-right: 60px;
+    text-decoration: none;
 }
 
 .sayhibutton {
@@ -612,7 +613,7 @@ header {
 
 @media screen and (max-width:1920px) {
     html {
-        font-size: 80%
+        font-size: 70%
     }
 
     .content {
@@ -621,6 +622,10 @@ header {
 
     .section {
         margin: 40px 250px;
+    }
+
+    .intro-subtitle h2 {
+        font-size: 3.5rem;
     }
 }
 
@@ -632,7 +637,7 @@ header {
 
 @media screen and (max-width:998px) {
     html {
-        font-size: 70%;
+        font-size: 60%;
     }
 
     .content {
@@ -667,7 +672,7 @@ header {
 
     .intro-contact a {
         margin-right: 40px;
-     }
+    }
 
     .intro-contact-links {
         margin-bottom: 30px;
@@ -677,7 +682,7 @@ header {
         height: 25px;
         width: 25px;
     }
-    
+
     #theme-button-icon {
         height: 30px;
         width: 30px;
