@@ -613,7 +613,7 @@ header {
 
 @media screen and (max-width:1920px) {
     html {
-        font-size: 70%
+        font-size: 80%
     }
 
     .content {
@@ -622,10 +622,6 @@ header {
 
     .section {
         margin: 40px 250px;
-    }
-
-    .intro-subtitle h2 {
-        font-size: 3.5rem;
     }
 }
 
