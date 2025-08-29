@@ -613,7 +613,6 @@ header {
 
 /* ABOUT */
 .section-title {
-    background-image: -webkit-gradient(linear, left top, right top, #b0f3f1, #ffcfdf);
     background-image: -webkit-linear-gradient(left, #b0f3f1, #ffcfdf);
     font-size: 3.5rem;
     margin: 400px 0 0 0;
