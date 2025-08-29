@@ -611,6 +611,16 @@ header {
     width: 45px;
 }
 
+/* ABOUT */
+.section-title {
+    background-image: -webkit-gradient(linear, left top, right top, #b0f3f1, #ffcfdf);
+    background-image: -webkit-linear-gradient(left, #b0f3f1, #ffcfdf);
+    font-size: 3.5rem;
+    margin: 400px 0 0 0;
+    padding: 200px 0 0 0;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width:1920px) {
     html {
         font-size: 80%
@@ -622,6 +632,11 @@ header {
 
     .section {
         margin: 40px 250px;
+    }
+
+    .section-title {
+        margin: 200px 0 0 0;
+        padding: 100px 0 0 0;
     }
 }
 
@@ -646,6 +661,11 @@ header {
 
     .blob {
         display: none;
+    }
+
+    .section-title {
+        margin: 50px 0 0 0;
+        padding: 150px 0 0 0;
     }
 }
 
