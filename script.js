@@ -1,14 +1,18 @@
+// CHANGE THEME
 function changeTheme(event) {
     event.preventDefault();
 
-    const bodyElement = document.querySelector("body");
+    const bodyElement = document.querySelector('body');
 
-    if (bodyElement.classList.contains("light")) {
-        bodyElement.classList.remove("light");
+    if (bodyElement.classList.contains('light')) {
+        bodyElement.classList.remove('light');
     } else {
-        bodyElement.classList.add("light");
+        bodyElement.classList.add('light');
     }
 }
 
-const themeButton = document.querySelector("#theme-button");
+const themeButton = document.querySelector('#theme-button');
 themeButton.addEventListener('click', changeTheme);
+
+
+// HAMBURGER MENU

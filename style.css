@@ -83,7 +83,8 @@ section {
     color: #000000;
 }
 
-.hamburger-container {
+.hamburger,
+.mobile-toggle-menu {
     display: none;
 }
 
@@ -93,25 +94,9 @@ section {
         display: none;
     }
 
-    .hamburger-container {
-        display: block;
-    }
+    /* HAMBURGER MENU */
 
-    .burger-menu {
-        display: none;
-    }
-
-    .burger-bar {
-        background-color: #FFFFFF;
-        display: block;
-        height: 0.15rem;
-        margin: 0.5rem auto;
-        width: 1rem;
-    }
-
-    .light .burger-bar {
-        background-color: #000000;
-    }
+    /* END OF HAMBURGER */
 }
 
 /* FOR MOBILE */
