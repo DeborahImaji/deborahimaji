@@ -83,16 +83,8 @@ section {
     color: #000000;
 }
 
-.hamburger,
-.mobile-toggle-menu {
-    display: none;
-}
-
 /* FOR TABLETS */
 @media screen and (max-width: 768px) {
-    .navbar-right {
-        display: none;
-    }
 
     /* HAMBURGER MENU */
 
