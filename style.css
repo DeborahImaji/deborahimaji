@@ -1,3 +1,12 @@
+/* Fonts */
+.fira-code {
+    font-family: 'Fira Code', monospace;
+    font-optical-sizing: auto;
+    font-weight: 300 700;
+    font-style: normal;
+}
+
+/* Defaults */
 * {
     box-sizing: border-box;
 }
@@ -5,6 +14,9 @@
 body {
     background-color: #11111B;
     color: #FFFFFF;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    font-weight: 500;
     transition: all 400ms ease-in-out;
 }
 
@@ -13,10 +25,105 @@ body {
     color: #000000;
 }
 
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 10rem 10%;
+}
+
+/* for testing only */
+section {
+    height: 1200px;
+}
+
+/* Header */
 .navbar {
-    backdrop-filter: blur(10px);
-    background-image: linear-gradient(to bottom right, #1A1A29, rgba(27, 27, 40, 0));
-    border: 1px solid #E2E2E207;
-    border-radius: 50px;
+    align-items: center;
+    backdrop-filter: blur(0.625rem);
+    background-image: linear-gradient(to bottom right, #1A1A29, #1b1b2800);
+    border: 0.063rem solid #E2E2E207;
+    border-radius: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    margin-top: 2.4rem;
+    overflow-y: hidden;
+    position: fixed;
+    transform: translate(-50%);
     width: 80%;
+}
+
+.light .navbar {
+    background-image: linear-gradient(to bottom right, #E7E2DB, #ECE7E100);
+    border: 0.063rem solid #D1D6EB;
+}
+
+.navbar-left,
+.navbar-right {
+    margin: 0.5rem 2.5rem;
+}
+
+.navbar-brand {
+    transition: all 400ms ease-in-out;
+    width: 3.5rem;
+}
+
+.navbar-brand:hover {
+    transform: translateY(2.5rem);
+}
+
+.navbar-link {
+    color: #FFFFFF;
+    margin: 0 1rem;
+}
+
+.light .navbar-link {
+    color: #000000;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+/* FOR TABLETS */
+@media screen and (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-bar {
+        background-color: #FFFFFF;
+        display: block;
+        height: 0.15rem;
+        margin: 0.5rem auto;
+        width: 1rem;
+    }
+
+    .light .burger-bar {
+        background-color: #000000;
+    }
+}
+
+/* FOR MOBILE */
+
+@media screen and (max-width: 500px) {
+
+    .navbar-left,
+    .navbar-right {
+        margin: 0.25rem 1.5rem;
+    }
+
+    .navbar-brand {
+        width: 3rem;
+    }
 }

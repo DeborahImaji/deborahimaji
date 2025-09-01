@@ -11,27 +11,69 @@
 
     <title>Deborah Imaji</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
-            <div>
-                <img class="navbar-brand" src="assets/images/deborahimaji-logo.png"
-                    alt="Deborah Imaji's 3d computer logo">
-            </div>
-            <div>
-                <a href="#" id="nav-home">&#60;/Home&#62;</a>
-                <a href="#about"> &#60;/About&#62;</a>
-                <a href="#experience"> &#60;/Experience&#62;</a>
-                <a href="#projects">&#60;/Projects&#62;</a>
-            </div>
-        </nav>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <img class="navbar-brand" src="assets/images/deborahimaji-logo.png"
+                        alt="Deborah Imaji's 3d computer logo">
+                </div>
+
+                <div class="navbar-right">
+                    <a href="#" id="nav-home" class="navbar-link">&#60;/Home&#62;</a>
+                    <a href="#about" class="navbar-link">&#60;/About&#62;</a>
+                    <a href="#experience" class="navbar-link">&#60;/Experience&#62;</a>
+                    <a href="#projects" class="navbar-link">&#60;/Projects&#62;</a>
+                </div>
+
+                <div class="hamburger-container">
+                    <div class="burger-menu-toggle" id="burger-menu-toggle">
+                        <span class="burger-bar"></span>
+                        <span class="burger-bar"></span>
+                        <span class="burger-bar"></span>
+                    </div>
+
+                    <ul class="burger-menu" id="burger-menu">
+                        <li class="burger-item">
+                            <a href="#" class="burger-link">&#60;/Home&#62;</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#about" class="burger-link">&#60;/About&#62;</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#experience" class="burger-link">&#60;/Experience&#62;</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#projects" class="burger-link">&#60;/Projects&#62;</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <button id="theme-button"></button>
+    <main>
+
+        <section id="intro">
+            <button id="theme-button"></button>
+        </section>
+
+        <section id="about"></section>
+
+        <section id="experience"></section>
+
+        <section id="projects"></section>
+
+    </main>
 
     <script src="script.js"></script>
 
