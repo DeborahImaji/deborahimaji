@@ -83,10 +83,51 @@ section {
     color: #000000;
 }
 
+.hamburger {
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    background-color: #FFFFFF;
+    border-radius: 1.2rem;
+    height: 0.188rem;
+    margin: 0.188rem 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    width: 1.563rem;
+}
+
+.light .hamburger-line {
+    background-color: #000000;
+}
+
+.hamburger-line:nth-child(2) {
+    width: 2rem;
+}
+
 /* FOR TABLETS */
 @media screen and (max-width: 768px) {
 
-    /* HAMBURGER MENU */
+    /* START OF HAMBURGER */
+    .navbar-left {
+        margin: 0.25rem 1.5rem;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin: 0 0.75rem;
+    }
 
     /* END OF HAMBURGER */
 }
@@ -94,11 +135,6 @@ section {
 /* FOR MOBILE */
 
 @media screen and (max-width: 500px) {
-
-    .navbar-left,
-    .navbar-right {
-        margin: 0.25rem 1.5rem;
-    }
 
     .navbar-brand {
         width: 3rem;
