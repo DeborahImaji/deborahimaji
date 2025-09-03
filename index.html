@@ -21,38 +21,36 @@
 <body>
 
     <header>
-        <div class="navbar-container">
-            <nav class="navbar">
-                <div class="navbar-left">
-                    <img class="navbar-brand" src="assets/images/deborahimaji-logo.png"
-                        alt="Deborah Imaji's 3d computer logo">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img class="navbar-brand" src="assets/images/deborahimaji-logo.png"
+                    alt="Deborah Imaji's 3d computer logo">
+            </div>
+
+            <div class="navbar-right">
+
+                <div class="nav-item active">
+                    <div class="nav-dot"></div>
+                    <a href="#home" class="navbar-link">&#60;/Home&#62;</a>
                 </div>
 
-                <div class="navbar-right">
-
-                    <div class="nav-item active">
-                        <div class="nav-dot"></div>
-                        <a href="#home" class="navbar-link">&#60;/Home&#62;</a>
-                    </div>
-
-                    <div class="nav-item">
-                        <div class="nav-dot"></div>
-                        <a href="#about" class="navbar-link">&#60;/About&#62;</a>
-                    </div>
-
-                    <div class="nav-item">
-                        <div class="nav-dot"></div>
-                        <a href="#experience" class="navbar-link">&#60;/Experience&#62;</a>
-                    </div>
-
-                    <div class="nav-item">
-                        <div class="nav-dot"></div>
-                        <a href="#projects" class="navbar-link">&#60;/Projects&#62;</a>
-                    </div>
-
+                <div class="nav-item">
+                    <div class="nav-dot"></div>
+                    <a href="#about" class="navbar-link">&#60;/About&#62;</a>
                 </div>
-            </nav>
-        </div>
+
+                <div class="nav-item">
+                    <div class="nav-dot"></div>
+                    <a href="#experience" class="navbar-link">&#60;/Experience&#62;</a>
+                </div>
+
+                <div class="nav-item">
+                    <div class="nav-dot"></div>
+                    <a href="#projects" class="navbar-link">&#60;/Projects&#62;</a>
+                </div>
+
+            </div>
+        </nav>
     </header>
 
     <!-- HAMBURGER MENU -->
@@ -74,19 +72,29 @@
     <div class="overlay" id="overlay"></div>
     <!-- HAMBURGER MENU -->
 
-    <main>
+    <section id="home" class="section">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio. This is the home section with some introductory content about who I am and what I
+            do.</p>
+        <button id="theme-button"></button>
+    </section>
 
-        <section id="home">
-            <button id="theme-button"></button>
-        </section>
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>Learn more about my background, skills, and experience. This section contains detailed information about my
+            professional journey.</p>
+    </section>
 
-        <section id="about"></section>
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <p>Explore my work experience including roles I've completed and currently hold.</p>
+    </section>
 
-        <section id="experience"></section>
-
-        <section id="projects"></section>
-
-    </main>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Explore my portfolio of work including web applications, designs, and other creative projects I've completed.
+        </p>
+    </section>
 
     <script src="script.js"></script>
 
