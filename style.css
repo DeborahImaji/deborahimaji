@@ -35,6 +35,54 @@ a {
     text-decoration: none;
 }
 
+.cursor-inner {
+    background-color: #6bc5f8;
+    height: 8px;
+    width: 8px;
+}
+
+.cursor-outer {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #FFFFFF;
+}
+
+.cursor-inner,
+.cursor-outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor-inner.hover {
+    width: 25px;
+    height: 25px;
+    transition: .2s;
+    mix-blend-mode: difference
+}
+
+.cursor-outer.hover {
+    width: 50px;
+    height: 50px;
+    transition: .2s
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a10;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8000ff;
+}
+
 /* Header */
 .navbar {
     align-items: center;
@@ -206,6 +254,27 @@ a {
     padding: 0;
 }
 
+.mobile-nav-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-nav-dot {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 0.45rem;
+    margin-right: 0.6rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    width: 0.45rem;
+}
+
+.light .mobile-nav-dot {
+    background-color: #000000;
+}
+
 .mobile-menu a {
     display: block;
     color: #FFFFFF;
@@ -218,6 +287,11 @@ a {
 
 .light .mobile-menu a {
     color: #000000;
+}
+
+.mobile-nav-item.active .mobile-nav-dot {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .overlay {
@@ -268,6 +342,11 @@ a {
 
 /* FOR TABLETS */
 @media screen and (max-width: 768px) {
+
+    .cursor-inner,
+    .cursor-outer {
+        display: none;
+    }
 
     /* START OF HAMBURGER */
     .navbar-left {

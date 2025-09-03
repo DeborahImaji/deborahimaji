@@ -20,6 +20,9 @@
 
 <body>
 
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
     <header>
         <nav class="navbar">
             <div class="navbar-left">
@@ -62,10 +65,22 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="#home">&#60;/Home&#62;</a></li>
-            <li><a href="#about">&#60;/About&#62;</a></li>
-            <li><a href="#experience">&#60;/Experience&#62;</a></li>
-            <li><a href="#projects">&#60;/Projects&#62;</a></li>
+            <li class="mobile-nav-item active">
+                <div class="mobile-nav-dot"></div>
+                <a href="#home">&#60;/Home&#62;</a>
+            </li>
+            <li class="mobile-nav-item">
+                <div class="mobile-nav-dot"></div>
+                <a href="#about">&#60;/About&#62;</a>
+            </li>
+            <li class="mobile-nav-item">
+                <div class="mobile-nav-dot"></div>
+                <a href="#experience">&#60;/Experience&#62;</a>
+            </li>
+            <li class="mobile-nav-item">
+                <div class="mobile-nav-dot"></div>
+                <a href="#projects">&#60;/Projects&#62;</a>
+            </li>
         </ul>
     </div>
 
