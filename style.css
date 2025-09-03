@@ -249,7 +249,7 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 7rem;
     list-style: none;
     padding: 0;
 }
@@ -278,7 +278,7 @@ a {
 .mobile-menu a {
     display: block;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 1rem 0;
     text-decoration: none;
@@ -326,7 +326,7 @@ a {
     padding: 8rem 10% 4rem;
 }
 
-.section h2 {
+.section-title {
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -340,8 +340,59 @@ a {
 }
 
 
+/* HOME */
+
+.home-greeting {
+    display: flex;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.jello:hover {
+    color: #03e6ff;
+    animation: jello-bounce 0.9s ease-in-out;
+}
+
+@keyframes jello-bounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0.75);
+    }
+
+    40% {
+        transform: scale(1.25);
+    }
+
+    50% {
+        transform: scale(0.85);
+    }
+
+    65% {
+        transform: scale(1.05);
+    }
+
+    75% {
+        transform: scale(0.95);
+    }
+}
+
+
 /* FOR TABLETS */
+@media screen and (max-width: 998px) {
+    html {
+        font-size: 80%;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
 
     .cursor-inner,
     .cursor-outer {
@@ -368,7 +419,7 @@ a {
         padding: 6rem 5% 3rem;
     }
 
-    .section h2 {
+    .section-title {
         font-size: 2rem;
     }
 
@@ -380,6 +431,9 @@ a {
 /* FOR MOBILE */
 
 @media screen and (max-width: 500px) {
+    html {
+        font-size: 60%;
+    }
 
     .navbar-brand {
         width: 3rem;
