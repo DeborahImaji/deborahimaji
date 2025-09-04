@@ -344,13 +344,18 @@ a {
 
 .home-greeting {
     display: flex;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 500;
+    margin: 0;
 }
 
 .jello:hover {
-    color: #03e6ff;
     animation: jello-bounce 0.9s ease-in-out;
+    background: #03e6ff;
+    background-clip: text;
+    color: #03e6ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes jello-bounce {
@@ -381,6 +386,49 @@ a {
     }
 }
 
+.home-title {
+    animation: gradientMove 4s ease-in-out infinite;
+    background: linear-gradient(90deg,
+            #6bc5f8,
+            /* Your blue */
+            #8ab4f8,
+            /* Lighter blue */
+            #a99ef8,
+            /* Blue-purple blend */
+            #c788f2,
+            /* Purple-pink blend */
+            #cf59e6,
+            /* Your magenta */
+            #d975e8,
+            /* Lighter magenta */
+            #6bc5f8);
+    background-clip: text;
+    background-size: 200% 100%;
+    display: flex;
+    font-family: 'Whitney', Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    margin: 0.75rem 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientMove {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.home-subtitle {
+    font-family: 'Whitney', Helvetica, Arial, sans-serif;
+    font-size: 3.5rem;
+    margin: 0.5rem 0;
+}
 
 /* FOR TABLETS */
 @media screen and (max-width: 998px) {
