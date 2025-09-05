@@ -76,7 +76,7 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0a0a10;
+    background: #11111B;
 }
 
 .light::-webkit-scrollbar-track {
@@ -434,14 +434,7 @@ a {
     margin: 0.5rem 0;
 }
 
-.home-subt-top {
-    display: flex;
-}
-
-.home-subt-top::after {
-    content: "  ";
-}
-
+.home-subt-top,
 .home-subt-bottom {
     display: flex;
 }
@@ -452,54 +445,50 @@ a {
 }
 
 .home-contact {
+    display: flex;
     margin: 2rem 0 0 0;
 }
 
-.sayhibutton {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-    height: 3rem;
-    position: relative;
-    transition: all 0.3s;
-    width: 12rem;
-}
-
-.sayhibutton-text {
+.mail-btn {
     align-items: center;
-    backdrop-filter: blur(0.313rem);
-    background-color: rgba(230, 230, 230, 0.466);
+    animation: float 3s ease-in-out infinite;
+    background: linear-gradient(135deg, #71cbff, #8000ff);
     border: none;
-    border-radius: 0.438rem;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font-weight: 700;
-    height: 100%;
-    justify-content: center;
-    letter-spacing: 0.05rem;
-    width: 100%;
+    border-radius: 3.125rem;
+    box-shadow: 0 0.25rem 0.938rem rgba(107, 197, 248, 0.3);
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.1rem;
+    font-weight: 600;
+    gap: 0.5rem;
+    overflow: hidden;
+    padding: 1rem 2.5rem;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
-.sayhibutton-bg {
-    background-image: linear-gradient(150deg, #71cbff, #8000ff);
-    border-radius: 0.438rem;
-    height: 100%;
-    left: 0.8rem;
-    pointer-events: none;
-    position: absolute;
-    top: 1.3rem;
-    transition: all 0.3s;
-    width: 75%;
-    z-index: -1;
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.625rem);
+    }
 }
 
-.sayhibutton:hover {
-    transform: translateY(-0.125rem) translateX(-0.125rem);
+.mail-btn:hover {
+    animation-play-state: paused;
+    transform: translateY(-0.313rem) scale(1.05);
+    box-shadow: 0 0.625rem 1.875rem rgba(102, 126, 234, 0.4);
 }
 
-.sayhibutton:hover .sayhibutton-bg {
-    transform: translateY(0.125rem) translateX(0.125rem);
+.home-social-link {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 /* FOR TABLETS */
