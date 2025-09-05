@@ -451,15 +451,19 @@ a {
     font-weight: 300;
 }
 
+.home-contact {
+    margin: 2rem 0 0 0;
+}
+
 .sayhibutton {
     background-color: transparent;
     border: none;
     border-radius: 0;
     cursor: pointer;
-    height: 2.5rem;
+    height: 3rem;
     position: relative;
     transition: all 0.3s;
-    width: 11.25rem;
+    width: 12rem;
 }
 
 .sayhibutton-text {
@@ -475,6 +479,27 @@ a {
     justify-content: center;
     letter-spacing: 0.05rem;
     width: 100%;
+}
+
+.sayhibutton-bg {
+    background-image: linear-gradient(150deg, #71cbff, #8000ff);
+    border-radius: 0.438rem;
+    height: 100%;
+    left: 0.8rem;
+    pointer-events: none;
+    position: absolute;
+    top: 1.3rem;
+    transition: all 0.3s;
+    width: 75%;
+    z-index: -1;
+}
+
+.sayhibutton:hover {
+    transform: translateY(-0.125rem) translateX(-0.125rem);
+}
+
+.sayhibutton:hover .sayhibutton-bg {
+    transform: translateY(0.125rem) translateX(0.125rem);
 }
 
 /* FOR TABLETS */
