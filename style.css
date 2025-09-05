@@ -511,6 +511,18 @@ a {
     width: 2.75rem;
 }
 
+.fade-in-hidden {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: var(--delay);
+}
+
 /* FOR TABLETS */
 @media screen and (max-width: 998px) {
     html {
@@ -576,5 +588,21 @@ a {
 
     .home-desc {
         font-size: 1.4rem;
+    }
+
+    .mail-btn {
+        margin-right: 1rem;
+    }
+
+    .home-social-link {
+        margin: 0 1rem;
+    }
+
+    .theme-button-icon {
+        margin-left: 0.5rem;
+    }
+
+    .blob {
+        display: none;
     }
 }

@@ -148,3 +148,24 @@ window.addEventListener('resize', () => {
         body.classList.remove('menu-open');
     }
 });
+
+
+// FADE IN ANIMATION
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    rootMargin: '0px 0px -100px 0px'
+});
+
+const fadeInElements = document.querySelectorAll('.fade-in-hidden');
+
+fadeInElements.forEach((el, index) => {
+    el.style.setProperty('--delay', `${index * 0.4}s`);
+    observer.observe(el);
+});
