@@ -445,8 +445,10 @@ a {
 }
 
 .home-contact {
+    align-items: center;
     display: flex;
-    margin: 2rem 0 0 0;
+    justify-content: space-between;
+    margin: 2.25rem 0 0 0;
 }
 
 .mail-btn {
@@ -462,6 +464,7 @@ a {
     font-size: 1.1rem;
     font-weight: 600;
     gap: 0.5rem;
+    margin-right: 1.5rem;
     overflow: hidden;
     padding: 1rem 2.5rem;
     position: relative;
@@ -487,8 +490,25 @@ a {
 }
 
 .home-social-link {
-    height: 2.5rem;
-    width: 2.5rem;
+    fill: #FFFFFF;
+    height: 2.25rem;
+    margin: 0 1.5rem;
+    width: 2.25rem;
+}
+
+.light .home-social-link {
+    fill: #000000;
+}
+
+.theme-button {
+    background-color: transparent;
+    border: none;
+}
+
+.theme-button-icon {
+    height: 2.75rem;
+    margin-left: 1rem;
+    width: 2.75rem;
 }
 
 /* FOR TABLETS */

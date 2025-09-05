@@ -5,12 +5,17 @@ function changeTheme(event) {
 
     if (body.classList.contains('light')) {
         body.classList.remove('light');
+        themeButtonIcon.src = `assets/icons/theme-moon.png`;
+
     } else {
         body.classList.add('light');
+        themeButtonIcon.src = `assets/icons/theme-sun.png`;
+
     }
 }
 
 const body = document.querySelector('body');
+const themeButtonIcon = document.querySelector("#theme-button-icon");
 
 const themeButton = document.querySelector('#theme-button');
 themeButton.addEventListener('click', changeTheme);
