@@ -170,3 +170,20 @@ fadeInElements.forEach((el, index) => {
     el.style.setProperty('--delay', `${index * 0.4}s`);
     observer.observe(el);
 });
+
+
+// Comprehensive fix
+window.addEventListener('load', () => {
+    // Force scroll to top
+    window.scrollTo(0, 0);
+
+    // Trigger animations for initially visible elements after a short delay
+    setTimeout(() => {
+        document.querySelectorAll('.animate-item').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                el.classList.add('visible');
+            }
+        });
+    }, 200);
+});
