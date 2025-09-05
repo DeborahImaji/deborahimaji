@@ -160,7 +160,8 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    rootMargin: '0px 0px -100px 0px'
+    threshold: 0.1,
+    rootMargin: '100px 0px 100px 0px'
 });
 
 const fadeInElements = document.querySelectorAll('.fade-in-hidden');
