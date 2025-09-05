@@ -79,6 +79,10 @@ a {
     background: #0a0a10;
 }
 
+.light::-webkit-scrollbar-track {
+    background: #ECE7E1;
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: #8000ff;
 }
@@ -333,7 +337,6 @@ a {
 }
 
 .section p {
-    font-size: 1.2rem;
     line-height: 1.6;
     max-width: 80%;
     text-align: center;
@@ -425,9 +428,53 @@ a {
 }
 
 .home-subtitle {
+    display: flex;
     font-family: 'Whitney', Helvetica, Arial, sans-serif;
     font-size: 3.5rem;
     margin: 0.5rem 0;
+}
+
+.home-subt-top {
+    display: flex;
+}
+
+.home-subt-top::after {
+    content: "  ";
+}
+
+.home-subt-bottom {
+    display: flex;
+}
+
+.home-desc {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.sayhibutton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    height: 2.5rem;
+    position: relative;
+    transition: all 0.3s;
+    width: 11.25rem;
+}
+
+.sayhibutton-text {
+    align-items: center;
+    backdrop-filter: blur(0.313rem);
+    background-color: rgba(230, 230, 230, 0.466);
+    border: none;
+    border-radius: 0.438rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-weight: 700;
+    height: 100%;
+    justify-content: center;
+    letter-spacing: 0.05rem;
+    width: 100%;
 }
 
 /* FOR TABLETS */
@@ -471,9 +518,11 @@ a {
         font-size: 2rem;
     }
 
-    .section p {
-        font-size: 1rem;
+    .home-subtitle {
+        align-items: center;
+        flex-direction: column;
     }
+
 }
 
 /* FOR MOBILE */
@@ -485,5 +534,13 @@ a {
 
     .navbar-brand {
         width: 3rem;
+    }
+
+    .section p {
+        max-width: 85%;
+    }
+
+    .home-desc {
+        font-size: 1.4rem;
     }
 }
