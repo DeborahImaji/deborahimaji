@@ -523,6 +523,36 @@ a {
     transition-delay: var(--delay);
 }
 
+
+/* ABOUT */
+
+.section-heading {
+    align-items: center;
+    display: flex;
+}
+
+.section-rule {
+    background-color: #FFFFFF;
+    height: 2rem;
+    width: 50%;
+}
+
+
+/* FOR SMALLER LAPTOPS */
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+    .home-desc {
+        font-size: 1.4rem;
+    }
+
+    .home-contact {
+        margin: 1.5rem 0 0 0;
+    }
+}
+
 /* FOR TABLETS */
 @media screen and (max-width: 998px) {
     html {
