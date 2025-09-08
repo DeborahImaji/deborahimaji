@@ -330,15 +330,47 @@ a {
     padding: 8rem 10% 4rem;
 }
 
-.section-title {
-    font-size: 3rem;
+.section-heading {
+    align-items: center;
+    display: flex;
     margin-bottom: 2rem;
+}
+
+.section-title {
+    background: linear-gradient(90deg,
+            #b0f3f1,
+            #ffcfdf);
+    background-clip: text;
+    font-size: 3rem;
     text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-rule {
+    background: linear-gradient(90deg,
+            #b0f3f1,
+            #ffcfdf);
+    border-radius: 1.25rem;
+    height: 0.2rem;
+    margin: 0 0 0 2rem;
+    width: 16rem;
+}
+
+.light .section-title {
+    background: linear-gradient(90deg, #0f7878, #f09bb9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.light .section-rule {
+    background: linear-gradient(90deg, #0f7878, #f09bb9);
 }
 
 .section p {
     line-height: 1.6;
-    max-width: 80%;
+    max-width: 85%;
     text-align: center;
 }
 
@@ -393,7 +425,7 @@ a {
     animation: gradientMove 4s ease-in-out infinite;
     background: linear-gradient(90deg,
             #6bc5f8,
-            /* Your blue */
+            /* My blue */
             #8ab4f8,
             /* Lighter blue */
             #a99ef8,
@@ -401,7 +433,7 @@ a {
             #c788f2,
             /* Purple-pink blend */
             #cf59e6,
-            /* Your magenta */
+            /* My magenta */
             #d975e8,
             /* Lighter magenta */
             #6bc5f8);
@@ -526,15 +558,22 @@ a {
 
 /* ABOUT */
 
-.section-heading {
+.about-content {
     align-items: center;
     display: flex;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0 10%;
 }
 
-.section-rule {
-    background-color: #FFFFFF;
-    height: 2rem;
-    width: 50%;
+.about-desc p {
+    line-height: 2.5rem;
+    max-width: 90%;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    width: 20rem;
 }
 
 
@@ -610,6 +649,12 @@ a {
 
     .navbar-brand {
         width: 3rem;
+    }
+
+    .section-rule {
+        height: 0.1rem;
+        margin: 0rem 0 0 1.1rem;
+        width: 8rem;
     }
 
     .section p {
