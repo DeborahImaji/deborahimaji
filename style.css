@@ -561,19 +561,24 @@ a {
 .about-content {
     align-items: center;
     display: flex;
-    font-size: 1.25rem;
-    font-weight: 300;
-    padding: 0 10%;
+    gap: 1.5rem;
+    padding: 0 7.5%;
 }
 
 .about-desc p {
+    font-size: 1.4rem;
+    font-weight: 300;
     line-height: 2.5rem;
-    max-width: 90%;
+    max-width: 95%;
+}
+
+.about-job {
+    font-weight: 500;
 }
 
 .about-pic {
     border-radius: 2rem;
-    width: 20rem;
+    width: 17.5rem;
 }
 
 
