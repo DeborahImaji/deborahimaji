@@ -425,17 +425,11 @@ a {
     animation: gradientMove 4s ease-in-out infinite;
     background: linear-gradient(90deg,
             #6bc5f8,
-            /* My blue */
             #8ab4f8,
-            /* Lighter blue */
             #a99ef8,
-            /* Blue-purple blend */
             #c788f2,
-            /* Purple-pink blend */
             #cf59e6,
-            /* My magenta */
             #d975e8,
-            /* Lighter magenta */
             #6bc5f8);
     background-clip: text;
     background-size: 200% 100%;
@@ -566,19 +560,44 @@ a {
 }
 
 .about-desc p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 2.5rem;
     max-width: 95%;
 }
 
 .about-job {
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.about-startup {
+    color: #6bc5f8;
+    font-weight: 700;
+}
+
+.light .about-startup {
+    color: #8000ff;
 }
 
 .about-pic {
     border-radius: 2rem;
+    box-shadow: 0 0.25rem 0.938rem rgba(107, 196, 248, 0.177);
+    transition: all 0.3s ease;
     width: 17.5rem;
+}
+
+.about-pic:hover {
+    box-shadow: 0 0.625rem 1.875rem rgba(102, 126, 234, 0.4);
+    transform: scale(1.05);
+}
+
+
+/* TECH STACK */
+
+.tech-stack-heading {
+    font-family: 'Whitney', Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
 }
 
 
@@ -601,6 +620,14 @@ a {
 @media screen and (max-width: 998px) {
     html {
         font-size: 80%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-desc p {
+        margin: 1.2rem auto;
     }
 }
 
@@ -642,7 +669,6 @@ a {
         align-items: center;
         flex-direction: column;
     }
-
 }
 
 /* FOR MOBILE */
@@ -682,7 +708,7 @@ a {
         margin-left: 0.5rem;
     }
 
-    .blob {
-        display: none;
+    .about-pic {
+        width: 15rem;
     }
 }
