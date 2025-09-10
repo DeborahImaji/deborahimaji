@@ -623,7 +623,7 @@ a {
     }
 
     .about-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .about-desc p {
@@ -682,6 +682,10 @@ a {
         width: 3rem;
     }
 
+    .section-heading {
+        margin-bottom: 1rem;
+    }
+
     .section-rule {
         height: 0.1rem;
         margin: 0rem 0 0 1.1rem;
@@ -709,6 +713,6 @@ a {
     }
 
     .about-pic {
-        width: 15rem;
+        width: 10rem;
     }
 }
