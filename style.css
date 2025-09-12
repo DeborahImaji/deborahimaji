@@ -539,14 +539,13 @@ a {
 
 .fade-in-hidden {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .fade-in-visible {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    transition-delay: var(--delay);
 }
 
 
@@ -589,6 +588,30 @@ a {
 .about-pic:hover {
     box-shadow: 0 0.625rem 1.875rem rgba(102, 126, 234, 0.4);
     transform: scale(1.05);
+}
+
+.ts-btn {
+    animation: float 3s ease-in-out infinite;
+    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, .199);
+    margin: 0 1rem;
+    padding: 0.65rem 0.75rem;
+}
+
+.ts-btn:hover {
+    animation-play-state: paused;
+}
+
+.ts-btn-icon {
+    fill: #FFFFFF;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.ts-btn-label {
+    color: #FFFFFF;
 }
 
 

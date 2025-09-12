@@ -152,38 +152,30 @@ window.addEventListener('resize', () => {
 
 // FADE IN ANIMATION
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, {
-    threshold: 0.1,
-    rootMargin: '100px 0px 100px 0px'
-});
+function initFadeInAnimation() {
+    const elements = document.querySelectorAll('.fade-in-hidden');
 
-const fadeInElements = document.querySelectorAll('.fade-in-hidden');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = parseInt(entry.target.dataset.index);
 
-fadeInElements.forEach((el, index) => {
-    el.style.setProperty('--delay', `${index * 0.4}s`);
-    observer.observe(el);
-});
+                setTimeout(() => {
+                    entry.target.classList.add('fade-in-visible');
+                }, index * 300);
 
-
-// Comprehensive fix
-window.addEventListener('load', () => {
-    // Force scroll to top
-    window.scrollTo(0, 0);
-
-    // Trigger animations for initially visible elements after a short delay
-    setTimeout(() => {
-        document.querySelectorAll('.animate-item').forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                el.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
-    }, 200);
-});
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    elements.forEach((el, index) => {
+        el.dataset.index = index;
+        observer.observe(el);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initFadeInAnimation);
