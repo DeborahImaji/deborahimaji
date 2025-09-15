@@ -683,7 +683,7 @@ a {
 
 .tech-stack-box {
     align-items: center;
-    background-image: linear-gradient(to bottom right, #1a1a29, #1b1b2800);
+    background: linear-gradient(to bottom right, #1a1a29, #1b1b2800);
     border: 0.063rem solid #292929;
     border-radius: 1.875rem;
     display: flex;
@@ -691,6 +691,11 @@ a {
     justify-content: center;
     position: relative;
     width: 10rem;
+}
+
+.light .tech-stack-box {
+    background-image: linear-gradient(to bottom right, #e7e2db, #ece7e100);
+    border: 0.063rem solid #dad5cf;
 }
 
 .tech-stack-box img {
@@ -717,6 +722,11 @@ a {
     position: absolute;
     top: -1.25rem;
     transition-duration: 0.2s;
+}
+
+.light .tooltip {
+    background-image: linear-gradient(to bottom right, #e7e2db, #ece7e100);
+    border: 0.063rem solid #dad5cf;
 }
 
 
