@@ -541,7 +541,7 @@ a {
 .fade-in-hidden {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-in-visible {
@@ -677,6 +677,7 @@ a {
     gap: 3.125rem;
     justify-content: center;
     margin: 3.125rem 0 0 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -832,5 +833,17 @@ a {
 
     .about-pic {
         width: 10rem;
+    }
+
+    .tech-stack-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+        padding: 0 7.5%;
+    }
+
+    .tech-stack-box {
+        width: 100%;
+        height: calc(76vw/2);
     }
 }

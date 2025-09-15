@@ -162,7 +162,7 @@ function initFadeInAnimation() {
 
                 setTimeout(() => {
                     entry.target.classList.add('fade-in-visible');
-                }, index * 300);
+                }, index * 200);
 
                 observer.unobserve(entry.target);
             }
