@@ -730,6 +730,111 @@ a {
 }
 
 
+/* EXPERIENCE */
+
+.exp-tabs-container {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+
+.exp-tab-list {
+    border-right: 0.125rem solid #0c0c13;
+    flex: 0 0 15.625rem;
+    padding-right: 1.25rem;
+}
+
+.light .exp-tab-list {
+    border-right: 0.125rem solid #cec9c3;
+}
+
+.exp-tab-button {
+    background: transparent;
+    border: none;
+    color: #bebebe;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.938rem 1.25rem;
+    position: relative;
+    text-align: left;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.light .exp-tab-button {
+    color: #5d5d5d;
+}
+
+.exp-tab-button:hover {
+    color: #FFFFFF;
+}
+
+.light .exp-tab-button:hover {
+    color: #000000;
+}
+
+.exp-tab-button.exp-active {
+    color: #FFFFFF;
+    font-weight: bold;
+    transform: translateX(0.313rem);
+}
+
+.light .exp-tab-button.exp-active {
+    color: #000000;
+}
+
+.exp-tab-button.exp-active::after {
+    border: 0.625rem solid transparent;
+    border-left-color: #8000ff;
+    content: '';
+    position: absolute;
+    right: -1.375rem;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.exp-tab-content {
+    flex: 1;
+    padding-left: 1.25rem;
+}
+
+.exp-tab-panel {
+    animation: fadeIn 0.5s ease forwards;
+    display: none;
+    opacity: 0;
+}
+
+.exp-tab-panel.exp-active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(1.25rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exp-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.exp-item .exp-role {
+    color: #8000ff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+
 /* FOR SMALLER LAPTOPS */
 @media screen and (max-width: 1366px) {
     html {
