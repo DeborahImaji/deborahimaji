@@ -305,76 +305,108 @@
             <div class="section-rule"></div>
         </div>
 
-        <div class="exp-tabs-container">
+        <div class="exp-container">
 
-            <div class="exp-tab-list">
-                <button class="exp-tab-button exp-active" data-tab="exp-tab1">Caskayd</button>
-                <button class="exp-tab-button" data-tab="exp-tab2">SheCodes</button>
-            </div>
+            <div class="exp-section">
 
-            <div class="exp-tab-content">
-                <div class="exp-tab-panel exp-active" id="exp-tab1">
-                    <div class="exp-item">
-                        <h3>Caskayd</h3>
-                        <div class="exp-role">Mobile Developer</div>
-                        <div class="exp-duration">Jun 2025 - Present</div>
-                        <div class="exp-description">
-                            Collaborated with the Caskayd team to design and develop
-                            user-facing features, focusing on functionality, usability, and clean code.
+                <div class="exp-floating-shapes">
+                    <div class="exp-shape"></div>
+                    <div class="exp-shape"></div>
+                    <div class="exp-shape"></div>
+                </div>
+
+                <div class="exp-tabs-container">
+                    <div class="exp-tabs">
+                        <div class="exp-tab-indicator" id="exp-tabIndicator"></div>
+
+                        <div class="exp-tab exp-active" onclick="switchTab(0, this)">
+                            <span class="exp-desktop-text">Caskayd</span>
+                            <span class="exp-mobile-text">00.</span>
                         </div>
-                        <div class="exp-achievements">
-                            <h4>Key Achievements</h4>
-                            <ul>
-                                <li>Designed and implemented user-facing features with React, improving overall platform
-                                    usability.</li>
-                                <li>Collaborated closely with the team to debug, test, and refine features following
-                                    best practices.</li>
-                            </ul>
+
+                        <div class="exp-tab" onclick="switchTab(1, this)">
+                            <span class="exp-desktop-text">SheCodes</span>
+                            <span class="exp-mobile-text">01.</span>
                         </div>
-                        <div class="exp-skills-list">
-                            <span class="exp-skill-tag">React</span>
-                            <span class="exp-skill-tag">TypeScript</span>
-                            <span class="exp-skill-tag">Node.js</span>
-                        </div>
+
                     </div>
                 </div>
 
-                <div class="exp-tab-panel" id="exp-tab2">
-                    <div class="exp-item">
-                        <h3>SheCodes</h3>
-                        <div class="exp-role">Student</div>
-                        <div class="exp-duration">Jul 2024 - Nov 2024</div>
-                        <div class="exp-description">
-                            Completed a series of intensive SheCodes workshops, gaining practical skills in front-end
-                            development, API integration,
-                            and modern coding workflows. Completed multiple projects and assignments under guided
-                            mentorship.
-                        </div>
-                        <div class="exp-achievements">
-                            <h4>Key Achievements</h4>
-                            <ul>
-                                <li>Built and deployed multiple interactive projects showcasing responsive design and
-                                    JavaScript functionality.</li>
-                                <li>Applied programming concepts to solve real problems through structured challenges
-                                    and hands-on coding.</li>
-                                <li>Awarded a competitive scholarship from the Delac Foundation to complete the full
-                                    programme.</li>
-                            </ul>
-                        </div>
-                        <div class="exp-skills-list">
-                            <span class="exp-skill-tag">HTML</span>
-                            <span class="exp-skill-tag">CSS</span>
-                            <span class="exp-skill-tag">JavaScript</span>
-                            <span class="exp-skill-tag">API</span>
-                            <span class="exp-skill-tag">GitHub</span>
-                            <span class="exp-skill-tag">Hosting</span>
-                            <span class="exp-skill-tag">AI</span>
+                <div class="exp-content-container">
+
+                    <div class="exp-tab-content exp-active">
+                        <div class="exp-detail">
+                            <div class="exp-company">Caskayd</div>
+                            <div class="exp-role">Mobile Developer</div>
+                            <div class="exp-duration">Jun 2025 - Present</div>
+                            <div class="exp-description">
+                                Collaborated with the Caskayd team to design and develop
+                                user-facing features, focusing on functionality, usability, and clean code.
+                            </div>
+                            <div class="exp-achievements">
+                                <div class="exp-achievement-item">
+                                    Designed and implemented user-facing features with
+                                    React, improving overall platform
+                                    usability.
+                                </div>
+                                <div class="exp-achievement-item">
+                                    Collaborated closely with the team to debug, test, and
+                                    refine features following
+                                    best practices.
+                                </div>
+                            </div>
+                            <div class="exp-skills">
+                                <span class="exp-skill-tag">React</span>
+                                <span class="exp-skill-tag">TypeScript</span>
+                                <span class="exp-skill-tag">Node.js</span>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="exp-tab-content">
+                        <div class="exp-detail">
+                            <div class="exp-company">SheCodes</div>
+                            <div class="exp-role">Student</div>
+                            <div class="exp-duration">Jul 2024 - Nov 2024</div>
+                            <div class="exp-description">
+                                Completed a series of intensive SheCodes workshops, gaining practical skills in
+                                front-end
+                                development, API integration,
+                                and modern coding workflows. Completed multiple projects and assignments under guided
+                                mentorship.
+                            </div>
+                            <div class="exp-achievements">
+                                <div class="exp-achievement-item">
+                                    Built and deployed multiple interactive projects showcasing responsive design and
+                                    JavaScript functionality.
+                                </div>
+                                <div class="exp-achievement-item">
+                                    Applied programming concepts to solve real problems through structured challenges
+                                    and hands-on coding.
+                                </div>
+                                <div class="exp-achievement-item">
+                                    Awarded a competitive scholarship from the Delac Foundation to complete the full
+                                    programme.
+                                </div>
+                            </div>
+                            <div class="exp-skills">
+                                <span class="exp-skill-tag">HTML</span>
+                                <span class="exp-skill-tag">CSS</span>
+                                <span class="exp-skill-tag">JavaScript</span>
+                                <span class="exp-skill-tag">API</span>
+                                <span class="exp-skill-tag">GitHub</span>
+                                <span class="exp-skill-tag">Hosting</span>
+                                <span class="exp-skill-tag">AI</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
 
         </div>
+
     </section>
 
     <!-- EXPERIENCE -->
