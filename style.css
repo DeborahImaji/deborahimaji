@@ -747,12 +747,275 @@ a {
     background: rgba(45, 55, 72, 0.3);
     border: 0.063rem solid rgba(226, 232, 240, 0.1);
     border-radius: 1.5rem;
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
     width: 100%;
 }
 
 .light .exp-section {
     background: rgba(255, 255, 255, 0.1);
     border: 0.063rem solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.exp-section::before {
+    background: linear-gradient(90deg, transparent, rgba(144, 205, 244, 0.2), transparent);
+    content: '';
+    height: 0.063rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.light .exp-section::before {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.exp-tabs-container {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.exp-tabs {
+    background: rgba(45, 55, 72, 0.4);
+    backdrop-filter: blur(0.625rem);
+    border: 0.063rem solid rgba(226, 232, 240, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.light .exp-tabs {
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.063rem solid rgba(255, 255, 255, 0.2);
+}
+
+.exp-tab-indicator {
+    background: #90cdf4;
+    border-radius: 0.75rem;
+    bottom: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(102, 126, 234, 0.3);
+    position: absolute;
+    top: 0.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.light .exp-tab-indicator {
+    background: #667eea;
+}
+
+.exp-tab {
+    border-radius: 0.75rem;
+    color: #e2e8f0;
+    cursor: pointer;
+    flex: 1;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.light .exp-tab {
+    color: #4a5568;
+}
+
+.exp-tab.exp-active {
+    color: #FFFFFF;
+}
+
+.exp-tab:hover:not(.exp-active) {
+    color: #f7fafc;
+    background: rgba(144, 205, 244, 0.2);
+}
+
+.light .exp-tab:hover:not(.exp-active) {
+    color: #2d3748;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.exp-content-container {
+    position: relative;
+}
+
+.exp-tab-content {
+    display: none;
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exp-tab-content.exp-active {
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(1.25rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exp-detail {
+    background: rgba(45, 55, 72, 0.4);
+    backdrop-filter: blur(0.625rem);
+    border: 0.063rem solid rgba(226, 232, 240, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.light .exp-detail {
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.063rem solid rgba(255, 255, 255, 0.2);
+}
+
+.exp-detail::before {
+    background: linear-gradient(90deg, #90cdf4, #764ba2);
+    content: '';
+    height: 0.188rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.light .exp-detail::before {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.exp-company {
+    color: #90cdf4;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.light .exp-company {
+    color: #667eea;
+}
+
+.exp-role {
+    color: #f7fafc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.light .exp-role {
+    color: #2d3748;
+}
+
+.exp-duration {
+    color: #e2e8f0;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.light .exp-duration {
+    color: #4a5568;
+}
+
+.exp-description {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.light .exp-description {
+    color: #4a5568;
+}
+
+.exp-achievements {
+    margin-bottom: 2rem;
+}
+
+.exp-achievement-item {
+    color: #e2e8f0;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.light .exp-achievement-item {
+    color: #4a5568;
+}
+
+.exp-achievement-item::before {
+    content: '▸';
+    color: #90cdf4;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.light .exp-achievement-item::before {
+    color: #667eea;
+}
+
+.exp-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.exp-skill-tag {
+    background: #90cdf4;
+    border-radius: 1.25rem;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.light .exp-skill-tag {
+    background: #667eea;
+}
+
+.exp-floating-shapes {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.exp-shape {
+    animation: float 6s ease-in-out infinite;
+    background: #90cdf4;
+    border-radius: 50%;
+    opacity: 0.1;
+    position: absolute;
+}
+
+.light .exp-shape {
+    background: #667eea;
+}
+
+.exp-shape:nth-child(1) {
+    animation-delay: 0s;
+    height: 5rem;
+    left: 10%;
+    top: 10%;
+    width: 5rem;
 }
 
 
