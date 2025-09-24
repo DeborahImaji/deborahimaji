@@ -1018,6 +1018,34 @@ a {
     width: 5rem;
 }
 
+.exp-shape:nth-child(2) {
+    animation-delay: 2s;
+    height: 3.75rem;
+    right: 30%;
+    top: 70%;
+    width: 3.75rem;
+}
+
+.exp-shape:nth-child(3) {
+    animation-delay: 4s;
+    height: 2.5rem;
+    right: 30%;
+    top: 30%;
+    width: 2.5rem;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1.25rem);
+    }
+}
+
 
 /* FOR SMALLER LAPTOPS */
 @media screen and (max-width: 1366px) {
@@ -1086,6 +1114,33 @@ a {
     .home-subtitle {
         align-items: center;
         flex-direction: column;
+    }
+
+    .exp-container {
+        padding: 1rem;
+    }
+
+    .exp-tabs {
+        flex-direction: row;
+        gap: 0.25rem;
+    }
+
+    .exp-tab {
+        font-size: 0.9rem;
+        min-width: 3.125rem;
+        padding: 0.75rem 0.5rem;
+    }
+
+    .exp-company {
+        font-size: 1.5rem;
+    }
+
+    .exp-role {
+        font-size: 1.2rem;
+    }
+
+    .exp-detail {
+        padding: 1.5rem;
     }
 }
 

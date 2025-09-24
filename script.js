@@ -179,3 +179,95 @@ function initFadeInAnimation() {
 }
 
 document.addEventListener('DOMContentLoaded', initFadeInAnimation);
+
+
+// EXPERIENCE SECTION
+
+let currentTab = 0;
+
+function switchTab(index, tabElement) {
+    // Update tab indicator position
+    const tabs = document.querySelectorAll('.exp-tab');
+    const indicator = document.getElementById('exp-tabIndicator');
+    const tabWidth = tabElement.offsetWidth;
+    const tabLeft = tabElement.offsetLeft;
+
+    indicator.style.width = tabWidth + 'px';
+    indicator.style.left = tabLeft + 'px';
+
+    // Update active states
+    tabs.forEach(tab => tab.classList.remove('exp-active'));
+    tabElement.classList.add('exp-active');
+
+    // Show corresponding content
+    const contents = document.querySelectorAll('.exp-tab-content');
+    contents.forEach((content, i) => {
+        if (i === index) {
+            content.classList.add('exp-active');
+        } else {
+            content.classList.remove('exp-active');
+        }
+    });
+
+    currentTab = index;
+}
+
+// Show/hide desktop/mobile text
+function updateTabText() {
+    const isMobile = window.innerWidth <= 768;
+    const desktopTexts = document.querySelectorAll('.exp-desktop-text');
+    const mobileTexts = document.querySelectorAll('.exp-mobile-text');
+
+    desktopTexts.forEach(text => {
+        text.style.display = isMobile ? 'none' : 'inline';
+    });
+
+    mobileTexts.forEach(text => {
+        text.style.display = isMobile ? 'inline' : 'none';
+    });
+}
+
+// Initialize tab indicator position and text display
+document.addEventListener('DOMContentLoaded', function () {
+    const firstTab = document.querySelector('.exp-tab.exp-active');
+    const indicator = document.getElementById('exp-tabIndicator');
+
+    indicator.style.width = firstTab.offsetWidth + 'px';
+    indicator.style.left = firstTab.offsetLeft + 'px';
+
+    updateTabText();
+
+    // Entrance animation
+    setTimeout(() => {
+        document.querySelector('.exp-section').style.transform = 'translateY(0)';
+        document.querySelector('.exp-section').style.opacity = '1';
+    }, 100);
+});
+
+// Update text display and indicator on resize
+window.addEventListener('resize', function () {
+    updateTabText();
+
+    // Recalculate indicator position
+    const activeTab = document.querySelector('.exp-tab.exp-active');
+    const indicator = document.getElementById('exp-tabIndicator');
+
+    setTimeout(() => {
+        indicator.style.width = activeTab.offsetWidth + 'px';
+        indicator.style.left = activeTab.offsetLeft + 'px';
+    }, 100);
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', function (e) {
+    const tabs = document.querySelectorAll('.exp-tab');
+
+    if (e.key === 'ArrowLeft' && currentTab > 0) {
+        switchTab(currentTab - 1, tabs[currentTab - 1]);
+    } else if (e.key === 'ArrowRight' && currentTab < tabs.length - 1) {
+        switchTab(currentTab + 1, tabs[currentTab + 1]);
+    }
+});
+
+// Smooth scroll
+document.documentElement.style.scrollBehavior = 'smooth';
