@@ -369,7 +369,8 @@ a {
     background: linear-gradient(90deg, #0f7878, #f09bb9);
 }
 
-.section p {
+#home p,
+#about p {
     line-height: 1.6;
     max-width: 85%;
     text-align: center;
@@ -1032,6 +1033,215 @@ a {
 
     50% {
         transform: translateY(-1.25rem);
+    }
+}
+
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+    margin-top: 2.5rem;
+}
+
+.project-card {
+    background: #1e293b;
+    border: 0.063rem solid #334155;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.375rem -0.063rem rgba(0, 0, 0, 0.3), 0 0.125rem 0.25rem -0.063rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.light .project-card {
+    background: #ECE7E1;
+    border: 0.063rem solid #D1D6EB;
+    box-shadow: 0 0.25rem 0.375rem -0.063rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem -0.063rem rgba(0, 0, 0, 0.06);
+}
+
+.project-card:hover {
+    box-shadow: 0 1.25rem 1.563rem -0.313rem rgba(0, 0, 0, 0.4), 0 0.625rem 0.625rem -0.313rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.625rem);
+}
+
+.light .project-card:hover {
+    box-shadow: 0 1.25rem 1.563rem -0.313rem rgba(0, 0, 0, 0.1), 0 0.625rem 0.625rem -0.313rem rgba(0, 0, 0, 0.04);
+}
+
+.project-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image::before {
+    background: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-image::before {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.project-card:nth-child(1) .project-image {
+    background-image: url('assets/images/synergy-preview.png');
+}
+
+.project-card:nth-child(2) .project-image {
+    background-image: url('assets/images/world-clocks-preview.png');
+}
+
+.project-card:nth-child(3) .project-image {
+    background-image: url('assets/images/recipe-generator-preview.png');
+}
+
+.project-overlay {
+    color: #FFFFFF;
+    font-size: 3rem;
+    left: 50%;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-content {
+    padding: 1.875rem;
+}
+
+.project-title {
+    color: #f1f5f9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.light .project-title {
+    color: #1a202c;
+}
+
+.project-description {
+    color: #cbd5e1;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.light .project-description {
+    color: #4a5568;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.563rem;
+}
+
+.tech-tag {
+    background: #1e293b;
+    border: 0.063rem solid #334155;
+    border-radius: 1.25rem;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.375rem 0.75rem;
+}
+
+.light .tech-tag {
+    background: #ECE7E1;
+    border: 0.063rem solid #D1D6EB;
+    color: #4a5568;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.938rem;
+}
+
+.project-link {
+    align-items: center;
+    border-radius: 0.625rem;
+    display: inline-flex;
+    font-weight: 500;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link.primary {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #FFFFFF;
+}
+
+.project-link.primary:hover {
+    box-shadow: 0 0.5rem 1.563rem rgba(99, 102, 241, 0.3);
+    transform: translateY(-0.125rem);
+}
+
+.project-link.secondary {
+    background: transparent;
+    border: 0.125rem solid #334155;
+    color: #cbd5e1;
+}
+
+.light .project-link.secondary {
+    border: 0.125rem solid #D1D6EB;
+    color: #4a5568;
+}
+
+.project-link.secondary:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    transform: translateY(-0.125rem);
+}
+
+.featured-badge {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    border-radius: 1.25rem;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.313rem 0.75rem;
+    position: absolute;
+    right: 0.938rem;
+    top: 0.938rem;
+    z-index: 999;
+}
+
+.project-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(1.875rem);
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
