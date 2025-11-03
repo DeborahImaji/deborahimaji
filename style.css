@@ -1093,14 +1093,18 @@ a {
 }
 
 .project-card:nth-child(1) .project-image {
-    background-image: url('assets/images/synergy-preview.png');
+    background-image: url('assets/images/lensmith-preview.png');
 }
 
 .project-card:nth-child(2) .project-image {
-    background-image: url('assets/images/world-clocks-preview.png');
+    background-image: url('assets/images/synergy-preview.png');
 }
 
 .project-card:nth-child(3) .project-image {
+    background-image: url('assets/images/world-clocks-preview.png');
+}
+
+.project-card:nth-child(4) .project-image {
     background-image: url('assets/images/recipe-generator-preview.png');
 }
 
@@ -1234,6 +1238,10 @@ a {
 
 .project-card:nth-child(3) {
     animation-delay: 0.3s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0.4s;
 }
 
 @keyframes fadeInUp {
