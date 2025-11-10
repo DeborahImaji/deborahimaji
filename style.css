@@ -1101,10 +1101,14 @@ a {
 }
 
 .project-card:nth-child(3) .project-image {
-    background-image: url('assets/images/world-clocks-preview.png');
+    background-image: url('assets/images/pixelwave-preview.png');
 }
 
 .project-card:nth-child(4) .project-image {
+    background-image: url('assets/images/world-clocks-preview.png');
+}
+
+.project-card:nth-child(5) .project-image {
     background-image: url('assets/images/recipe-generator-preview.png');
 }
 
@@ -1242,6 +1246,10 @@ a {
 
 .project-card:nth-child(4) {
     animation-delay: 0.4s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 0.5s;
 }
 
 @keyframes fadeInUp {
